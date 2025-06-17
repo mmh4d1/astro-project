@@ -1,0 +1,2330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solar-System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body style="background-color: rgb(0, 0, 0);">
+    <div class="stars"></div>
+    <h1 style="color: white; z-index: 10; position: absolute; left: 100px; top: 10px; opacity: 0;" id="sun2">Sun</h1>
+    <img src="sun.png" style="width: 750px; position: absolute; top: 60px; left: -350px;" class="planet" id="sunn">
+    <h1 style="color: white; z-index: 10; position: absolute; left: 350px; top: 365px; opacity: 0;" id="mer">Mercury</h1>
+    <img src="mercury.png" style="width: 100px; position: absolute; top: 420px; left: 360px;" class="planet" id="mercury">
+    <h1 style="color: white; z-index: 10; position: absolute; left: 510px; top: 315px; opacity: 0;" id="ven">Venus</h1>
+    <img src="venus.png" style="width: 150px; position: absolute; top: 390px; left: 480px;" class="planet" id="venus">
+    <h1 style="color: white; z-index: 10; position: absolute; left: 695px; top: 315px; opacity: 0;" id="ear">Earth</h1>
+    <img src="earth.png" style="width: 170px; position: absolute; top: 380px; left: 650px;" class="planet" id="earth">
+    <h1 style="color: white; z-index: 10; position: absolute; left: 850px; top: 350px; opacity: 0;" id="mar">Mars</h1>
+    <img src="mars.png" style="width: 110px; position: absolute; top: 420px; left: 830px;" class="planet" id="mars">
+    <h1 style="color: white; z-index: 10; position: absolute; left: 1040px; top: 260px; opacity: 0;" id="jup">Jupiter</h1>
+    <img src="jupiter.png" style="width: 250px; position: absolute; top: 350px; left: 970px;" class="planet" id="jupiter">
+    <h1 style="color: white; z-index: 10; position: absolute; left: 1340px; top: 280px; opacity: 0;" id="sat">Saturn</h1>
+    <img src="saturn.png" style="width: 350px; position: absolute; top: 300px; left: 1220px;" class="planet" id="saturn">
+    <h1 style="color: white; z-index: 10; position: absolute; left: 1580px; top: 320px; opacity: 0;" id="ura">Uranus</h1>
+    <img src="uranus.webp" style="width: 200px; position: absolute; top: 390px; left: 1530px;" class="planet" id="uranus">
+    <h1 style="color: white; z-index: 10; position: absolute; left: 1770px; top: 320px; opacity: 0;" id="nep">Neptune</h1>
+    <img src="neptune.png" style="width: 180px; position: absolute; top: 400px; left: 1740px;" class="planet" id="neptune">
+
+
+   <button type="button" id="marsoverview" class="planetbutton" style="position: absolute; top: 50px; left: 600px;"><span class="planetlabel">OVERVIEW</span></button>
+   <button type="button" id="marsff" class="planetbutton" style="position: absolute; top: 50px; left: 970px;"><span class="planetlabel">FUN FACTS</span></button>
+   <button type="button" id="marsmi" class="planetbutton" style="position: absolute; top: 50px; left: 1340px;"><span class="planetlabel">MISSIONS TO MARS</span></button>
+   <button type="button" id="marsex" class="planetbutton" style="position: absolute; top: 200px; left: 600px;"><span class="planetlabel">EXPERIMENTS</span></button>
+   <button type="button" id="marsge" class="planetbutton" style="position: absolute; top: 200px; left: 970px;"><span class="planetlabel">PICTURES</span></button>
+   <button type="button" id="marssy" class="planetbutton" style="position: absolute; top: 200px; left: 1340px;"><span class="planetlabel">SYMBOLISM</span></button>
+
+    <div id="venusbuttons">
+   <button type="button" id="venusoverview" class="planetbutton" style="position: absolute; top: 50px; left: 600px;"><span class="planetlabel">OVERVIEW</span></button>
+   <button type="button" id="venusff" class="planetbutton" style="position: absolute; top: 50px; left: 970px;"><span class="planetlabel">FUN FACTS</span></button>
+   <button type="button" id="venusmi" class="planetbutton" style="position: absolute; top: 50px; left: 1340px;"><span class="planetlabel">MISSIONS TO VENUS</span></button>
+   <button type="button" id="venusex" class="planetbutton" style="position: absolute; top: 200px; left: 600px;"><span class="planetlabel">EXPERIMENTS</span></button>
+   <button type="button" id="venusge" class="planetbutton" style="position: absolute; top: 200px; left: 970px;"><span class="planetlabel">PICTURES</span></button>
+   <button type="button" id="venussy" class="planetbutton" style="position: absolute; top: 200px; left: 1340px;"><span class="planetlabel">SYMBOLISM</span></button>
+   </div>
+
+   <div id="mercurybuttons">
+   <button type="button" id="merov" class="planetbutton" style="position: absolute; top: 50px; left: 600px;"><span class="planetlabel">OVERVIEW</span></button>
+   <button type="button" id="merff" class="planetbutton" style="position: absolute; top: 50px; left: 970px;"><span class="planetlabel">FUN FACTS</span></button>
+   <button type="button" id="mermi" class="planetbutton" style="position: absolute; top: 50px; left: 1340px; font-size: large;"><span class="planetlabel">MISSIONS TO MERCURY</span></button>
+   <button type="button" id="merex" class="planetbutton" style="position: absolute; top: 200px; left: 600px;"><span class="planetlabel">EXPERIMENTS</span></button>
+   <button type="button" id="merge" class="planetbutton" style="position: absolute; top: 200px; left: 970px;"><span class="planetlabel">PICTURES</span></button>
+   <button type="button" id="mersy" class="planetbutton" style="position: absolute; top: 200px; left: 1340px;"><span class="planetlabel">SYMBOLISM</span></button>
+   </div>
+
+   <div id="neptunebuttons">
+   <button type="button" id="nepov" class="planetbutton" style="position: absolute; top: 50px; left: 600px;"><span class="planetlabel">OVERVIEW</span></button>
+   <button type="button" id="nepff" class="planetbutton" style="position: absolute; top: 50px; left: 970px;"><span class="planetlabel">FUN FACTS</span></button>
+   <button type="button" id="nepmi" class="planetbutton" style="position: absolute; top: 50px; left: 1340px; font-size: large;"><span class="planetlabel">MISSIONS TO NEPTUNE</span></button>
+   <button type="button" id="nepex" class="planetbutton" style="position: absolute; top: 200px; left: 600px;"><span class="planetlabel">EXPERIMENTS</span></button>
+   <button type="button" id="nepge" class="planetbutton" style="position: absolute; top: 200px; left: 970px;"><span class="planetlabel">PICTURES</span></button>
+   <button type="button" id="nepsy" class="planetbutton" style="position: absolute; top: 200px; left: 1340px;"><span class="planetlabel">SYMBOLISM</span></button>
+   </div>
+
+   <div id="saturnbuttons">
+   <button type="button" id="satov" class="planetbutton" style="position: absolute; top: 50px; left: 600px;"><span class="planetlabel">OVERVIEW</span></button>
+   <button type="button" id="satff" class="planetbutton" style="position: absolute; top: 50px; left: 970px;"><span class="planetlabel">FUN FACTS</span></button>
+   <button type="button" id="satmi" class="planetbutton" style="position: absolute; top: 50px; left: 1340px; font-size: large;"><span class="planetlabel">MISSIONS TO SATURN</span></button>
+   <button type="button" id="satex" class="planetbutton" style="position: absolute; top: 200px; left: 600px;"><span class="planetlabel">EXPERIMENTS</span></button>
+   <button type="button" id="satge" class="planetbutton" style="position: absolute; top: 200px; left: 970px;"><span class="planetlabel">PICTURES</span></button>
+   <button type="button" id="satsy" class="planetbutton" style="position: absolute; top: 200px; left: 1340px;"><span class="planetlabel">SYMBOLISM</span></button>
+   </div>
+
+   <div id="uranusbuttons">
+   <button type="button" id="uraov" class="planetbutton" style="position: absolute; top: 50px; left: 600px;"><span class="planetlabel">OVERVIEW</span></button>
+   <button type="button" id="uraff" class="planetbutton" style="position: absolute; top: 50px; left: 970px;"><span class="planetlabel">FUN FACTS</span></button>
+   <button type="button" id="urami" class="planetbutton" style="position: absolute; top: 50px; left: 1340px; font-size: large;"><span class="planetlabel">MISSIONS TO URANUS</span></button>
+   <button type="button" id="uraex" class="planetbutton" style="position: absolute; top: 200px; left: 600px;"><span class="planetlabel">EXPERIMENTS</span></button>
+   <button type="button" id="urage" class="planetbutton" style="position: absolute; top: 200px; left: 970px;"><span class="planetlabel">PICTURES</span></button>
+   <button type="button" id="urasy" class="planetbutton" style="position: absolute; top: 200px; left: 1340px;"><span class="planetlabel">SYMBOLISM</span></button>
+   </div>
+
+<div style="color: white;" id="uraovep">
+   Uranus is the seventh planet from the Sun and the third largest in our solar system, trailing only behind Jupiter and Saturn. It holds the distinction of being the first planet discovered with the aid of a telescope. In 1781, astronomer William Herschel spotted Uranus, initially mistaking it for a comet or star. It wasn’t until two years later, thanks in part to observations by Johann Elert Bode, that Uranus was recognized as a new planet.
+
+A day on Uranus lasts about 17 hours—the time it takes the planet to complete one full rotation on its axis. Meanwhile, a year on Uranus, or one full orbit around the Sun, spans approximately 84 Earth years (about 30,687 Earth days).
+
+One of Uranus’s most unique features is its extreme axial tilt of 97.77 degrees, meaning its equator is nearly perpendicular to its orbit. This unusual tilt may be the result of a massive collision with an Earth-sized object long ago. Because of this tilt, Uranus experiences the most extreme seasons in the solar system. For nearly a quarter of its year, the Sun shines directly over one of its poles, while the other half of the planet is plunged into a 21-year-long, dark winter.
+
+Uranus is orbited by 28 known moons and is surrounded by two sets of rings. The inner system comprises nine narrow, dark grey rings, while the two outer rings include a reddish dusty ring and a blue ring, reminiscent of Saturn’s E ring. Classified as one of the solar system’s two ice giants—alongside Neptune—Uranus’s mass is primarily made up (over 80%) of a hot, dense fluid mixture of “icy” materials such as water, methane, and ammonia.
+</div>
+
+<div style="color: white;" id="urafflist">
+   <ul>
+      <li>As everyone knows, Uranus spins sideways, the only planet in the solar system to do so. Appearing as if a barrel is rolling.</p>
+      <li>Scientists believe Uranus' sideways rotation was caused due to a collision with an Earth-sized object.</p>
+      <li>It Might Rain Diamonds Deep within Uranus, the intense pressure may break apart methane, releasing carbon atoms that compress into diamond crystals, which may sink like hail through the planet's interior.</p>
+      <li>Uranus was nearly named George. After its discovery in 1781 by William Herschel, Uranus was briefly named “Georgium Sidus” (in honor of King George III). It was until after, when adopting mythological terms, it was named Uranus.</p>
+      <li>Observations suggest that Uranus would smell like rotten egg, due to the immense amount of methane that resides within the atmosphere. Shit smelling planet.</p>
+      <li>Despite not being the farthest planet, Uranus has the coldest recorded planetary temperature: -224°C. Most likely due to lack of internal heat caused by the theorised past collision.</p>
+      <li>Miranda, one of Uranus’s moons, has jumbled, mismatched terrain. Some scientists believe Miranda was blown apart by a huge impact and reassembled itself — making it possibly the weirdest moon in the solar system.</p>
+      <li>Though far from the Sun, some of Uranus’s moons may contain subsurface oceans, possibly warmed by tidal flexing. If that’s the case, extremophile life could exist below the icy crusts of Ariel, Umbriel, or Titania.></p>
+   </ul>
+ 
+
+</div>
+
+<div id="uranusmissions" style="color: white;">
+   <h3>Voyager 2</h3>
+<ul>
+  <li><p>In January 1986, NASA’s Voyager 2 became the first, and so far the only, spacecraft to explore Uranus.</p></li>
+  <li><p>The spacecraft’s instruments revealed that Uranus’ magnetic field dipole was tilted by 59 degrees compared to its rotational axis and offset from the planet’s center by about one-third of the planet’s radius, unlike any previously observed planetary magnetic field.</p></li>
+  <li><p>Voyager 2 discovered 10 moons, studied the planet's cold atmosphere, and examined its ring system, discovering two new rings.</p></li>
+  <li><p>Voyager 2 found 10 new moons, bringing the total number to 15 at the time. Most of the new moons are small, with the largest measuring about 150 km (93 mi) in diameter.</p></li>
+  <li><p>Radiation belts at Uranus were found to be of an intensity similar to those at Saturn.</p></li>
+  <li><p>The moon Miranda, innermost of the five large moons, was revealed to be one of the strangest bodies yet seen in the Solar System. Detailed images from Voyager 2's flyby of the moon showed huge oval structures termed coronae flanked by faults as deep as 20 km (12 mi), terraced layers, and a mixture of old and young surfaces.</p></li>
+  <li><p>The five large moons appear to be ice–rock conglomerates like the satellites of Saturn.</p></li>
+</ul>
+
+<h3>NO MORE MISSIONS WERE CONDUCTED.</h3>
+</div>
+
+<div style="color: white;" id="urasym">
+   <div id="urast">
+   <p>Uranus, named after the ancient Greek deity of the sky—the father of Kronos (Saturn) and grandfather of Zeus (Jupiter)—holds deep mythological and symbolic significance. Some even argue that Uranus resonates more strongly with the myth of Prometheus, the bringer of fire and rebellion. In astrology, Uranus rules the zodiac sign Aquarius and is exalted in Scorpio. It is considered the planet of freedom, revolution, and visionary change. Known for breaking with tradition, Uranus represents originality, sudden insight, and the drive to imagine and create new possibilities. It governs modern concepts such as the Internet, electricity, technology, mental exploration, and astrology itself. Uranus is closely tied to the coming Age of Aquarius, embodying progressive ideals and forward-thinking innovation. Its placement in a birth chart highlights where one might express independence, unconventional thinking, or even rebellion against societal norms. As an astrological force, Uranus challenges the status quo and propels us toward a future shaped by individuality, radical change, and enlightenment.</p>
+
+   <h3>Uranus in Aries</h3>
+<ul>
+  <li>Aries represents the self, identity, and individuality.</li>
+  <li>Uranus here emphasizes freedom of individuality and bold self-expression.</li>
+  <li>People with this placement fiercely value their personal freedom <br> and originality.</li>
+</ul>
+
+<h3>Uranus in Taurus</h3>
+<ul>
+  <li>Taurus is linked to stability, values, and material security.</li>
+  <li>Uranus in Taurus can bring sudden changes in how you value possessions<br>  and comfort.</li>
+  <li>This placement challenges traditional ideas of wealth and encourages<br>  innovation in finances.</li>
+</ul>
+
+<h3>Uranus in Gemini</h3>
+<ul>
+  <li>Gemini governs communication, ideas, and learning.</li>
+  <li>Uranus here sparks unconventional thinking and a love for innovative ideas.</li>
+  <li>Those with this placement often think outside the box and enjoy intellectual <br> freedom.</li>
+</ul>
+
+<h3>Uranus in Cancer</h3>
+<ul>
+  <li>Cancer is tied to emotions, family, and nurturing.</li>
+  <li>Uranus in Cancer can cause unpredictable shifts in emotional life<br> and family dynamics.</li>
+  <li>This placement encourages breaking free from traditional emotional <br> patterns.</li>
+</ul>
+
+<h3>Uranus in Leo</h3>
+<ul>
+  <li>Leo relates to self-expression, creativity, and leadership.</li>
+  <li>Uranus in Leo inspires original creative expression and bold individuality.</li>
+  <li>People with this placement often shine in unique ways and lead <br> with innovation.</li>
+</ul>
+
+
+<h3>Uranus in Virgo</h3>
+<ul>
+  <li>Virgo governs details, work, and service.</li>
+  <li>Uranus here encourages revolutionary ideas in health, work, and daily routines.</li>
+  <li>This placement pushes to improve systems with originality and technology.</li>
+</ul>
+</div>
+<div id="urast2">
+
+<h3>Uranus in Libra</h3>
+<ul>
+  <li>Libra represents relationships, balance, and fairness.</li>
+  <li>Uranus in Libra brings unconventional approaches to partnerships and social <br>harmony.</li>
+  <li>This placement favors freedom within relationships and challenges traditional <br>roles.</li>
+</ul>
+
+<h3>Uranus in Scorpio</h3>
+<ul>
+  <li>Scorpio is about intensity, transformation, and depth.</li>
+  <li>Uranus here promotes radical changes in emotional depth and personal <br>transformation.</li>
+  <li>This placement often involves breaking taboos and embracing powerful change.</li>
+</ul>
+
+<h3>Uranus in Sagittarius</h3>
+<ul>
+  <li>Sagittarius governs exploration, philosophy, and freedom.</li>
+  <li>Uranus in Sagittarius inspires a quest for knowledge and new, revolutionary ideas.</li>
+  <li>This placement pushes for freedom in beliefs and global awareness.</li>
+</ul>
+
+<h3>Uranus in Capricorn</h3>
+<ul>
+  <li>Capricorn relates to structure, ambition, and responsibility.</li>
+  <li>Uranus in Capricorn shakes up traditional systems, careers, and authority.</li>
+  <li>This placement encourages innovative approaches to leadership and long-term <br> goals.</li>
+</ul>
+
+<h3>Uranus in Aquarius</h3>
+<ul>
+  <li>Aquarius is ruled by Uranus and is connected to innovation and humanitarianism.</li>
+  <li>Uranus in Aquarius heightens originality, eccentricity, and visionary thinking.</li>
+  <li>This placement drives social progress and unconventional ideas.</li>
+</ul>
+
+<h3>Uranus in Pisces</h3>
+<ul>
+  <li>Pisces is about intuition, dreams, and spirituality.</li>
+  <li>Uranus here encourages unique spiritual insights and imaginative creativity.</li>
+  <li>This placement blends visionary ideas with emotional depth and compassion.</li>
+</ul>
+</div>
+</div>
+
+
+
+   <div id="satsyss" style="color: white;">
+          <div id="satast">
+     <p>In astrology, Saturn symbolizes structure, discipline, and boundaries. It governs the rules, limitations, and responsibilities we encounter in life. While Jupiter expands, Saturn contracts, reminding us of the importance of restraint, accountability, and long-term planning.
+
+Often associated with authority figures, like fathers or teachers, Saturn’s influence can feel restrictive, especially in youth, as it represents the rules and expectations imposed on us. However, these constraints are ultimately meant to help us mature, build character, and develop inner strength.
+
+In the natal chart, Saturn’s position by sign and house reveals where we may experience fears, blocks, or a sense of burden, but also where we have the potential for mastery and growth through effort. It challenges us to face our insecurities and take responsibility for our lives, encouraging us to transform hardship into wisdom and personal power over time.
+
+Saturn’s lessons aren’t always easy, but they are some of the most rewarding and enduring.
+</p>
+
+      <h3>Saturn in Aries</h3>
+<ul>
+  <li>Aries represents the self, identity, and individuality.</li>
+  <li>Saturn here brings lessons about restricting your true self out of fear of <br> others’ opinions.</li>
+  <li>You may struggle with trusting yourself and setting personal boundaries.</li>
+</ul>
+
+<h3>Saturn in Taurus</h3>
+<ul>
+  <li>Taurus links to self-worth and material wealth.</li>
+  <li>Your self-esteem may depend on your financial status.</li>
+  <li>Saturn challenges you to recognize your value beyond material gain.</li>
+</ul>
+
+<h3>Saturn in Gemini</h3>
+<ul>
+  <li>Gemini rules speech and communication.</li>
+  <li>Saturn here can cause difficulty in expressing yourself or speaking <br> your truth.</li>
+  <li>You're being taught the importance of honest and open communication.</li>
+</ul>
+
+<h3>Saturn in Cancer</h3>
+<ul>
+  <li>Cancer is nurturing and emotionally deep.</li>
+  <li>With Saturn here, you may lack emotional comfort or feel pressured to be <br> the caregiver.</li>
+  <li>The lesson is to honor your own emotions and practice self-care.</li>
+</ul>
+
+<h3>Saturn in Leo</h3>
+<ul>
+  <li>Leo is about self-expression, joy, and creativity.</li>
+  <li>You might have felt forced to mature early or had limited <br> childhood freedom.</li>
+  <li>Saturn encourages you to rediscover your inner joy and creativity.</li>
+</ul>
+
+<h3>Saturn in Virgo</h3>
+<ul>
+  <li>Virgo seeks perfection and order.</li>
+  <li>Saturn intensifies self-criticism and anxiety about details and productivity.</li>
+  <li>The challenge is to let go of perfection and embrace flow and balance.</li>
+</ul>
+</div> 
+
+<div id="satast2">
+
+<h3>Saturn in Libra</h3>
+<ul>
+  <li>Libra governs relationships and fairness.</li>
+  <li>You may find it hard to commit or make decisions in relationships.</li>
+  <li>Saturn calls you to heal fears around connection and deepen your <br> relational understanding.</li>
+</ul>
+
+<h3>Saturn in Scorpio</h3>
+<ul>
+  <li>Scorpio rules transformation, intensity, and emotional depth.</li>
+  <li>You may resist emotional vulnerability or fear profound change.</li>
+  <li>The task is to embrace life’s deeper currents and grow through transformation.</li>
+</ul>
+
+<h3>Saturn in Sagittarius</h3>
+<ul>
+  <li>Sagittarius seeks freedom, truth, and exploration.</li>
+  <li>You may question belief systems and prefer your own discoveries over <br>popular views.</li>
+  <li>Growth often comes through travel or stepping outside your comfort zone.</li>
+</ul>
+
+<h3>Saturn in Capricorn</h3>
+<ul>
+  <li>Saturn rules Capricorn and feels at home here.</li>
+  <li>You hold strong commitments and responsibilities, often setting high expectations.</li>
+  <li>Learning to ease up and avoid self-imposed pressure is your Saturnian task.</li>
+</ul>
+
+<h3>Saturn in Aquarius</h3>
+<ul>
+  <li>Aquarius, also ruled by Saturn, deals with innovation and community.</li>
+  <li>You are grounded about your dreams and cautious with group affiliations.</li>
+  <li>Letting go of control allows for unexpected breakthroughs and personal evolution.</li>
+</ul>
+
+<h3>Saturn in Pisces</h3>
+<ul>
+  <li>Pisces is empathetic, intuitive, and emotional.</li>
+  <li>You may suppress your emotions or struggle with vulnerability.</li>
+  <li>Saturn teaches you to honor your feelings and allow emotional expression <br>and release.</li>
+</ul>
+</div>
+   </div>
+
+   <div style="color: white;" id="satmiss">
+   <h3>Cassini–Huygens Mission</h3>
+<ul>
+  <li>For more than a decade, NASA’s Cassini spacecraft shared the wonders of Saturn and its family of icy moons.</p>
+  <li>Cassini was a sophisticated robotic spacecraft sent to study Saturn and its complex system of rings and moons in unprecedented detail. It was one of the most ambitious efforts ever mounted in planetary exploration.</p>
+  <li>Discovered icy plumes spraying from fractures on Saturn’s moon Enceladus, leading to the understanding that the moon possesses a global ocean of liquid water, likely with hydrothermal activity on the seafloor.</p>
+  <li>Found Saturn’s rings to be active and dynamic — a laboratory for how planets or moons form.</p>
+  <li>Revealed Titan to have rain, rivers, lakes, and seas; it is shrouded in a thick, nitrogen-rich atmosphere that might be similar to what Earth’s was like long ago.</p>
+  <li>Imaged vertical structures in the rings for the first time; they appear to be made up of particles piled up in bumps or ridges more than 2 miles (3 km) high.</p>
+  <li>In late 2016, the Cassini spacecraft began a daring set of orbits called the Grand Finale, flying just outside its narrow F ring 20 times — essentially a whole new mission.</p>
+  <li>On Sept. 15, 2017, Cassini made its final approach and dived into Saturn’s atmosphere, transmitting data until it burned up like a meteor high above the clouds.</p>
+</ul>
+
+<h3>Voyager 1 Mission</h3>
+<ul>
+  <li>Voyager 1 is a space probe launched by NASA on September 5, 1977, as part of the Voyager program to study the outer Solar System.</p>
+  <li>The probe made flybys of Jupiter, Saturn, and Saturn's largest moon, Titan.</p>
+  <li>Voyager 1 found that about seven percent of the volume of Saturn's upper atmosphere is helium (compared with 11 percent of Jupiter's atmosphere), while almost all the rest is hydrogen.</p>
+  <li>The Voyagers found aurora-like ultraviolet emissions of hydrogen at mid-latitudes in the atmosphere, and auroras at polar latitudes (above 65 degrees).</p>
+  <li>The lower abundance of helium in the upper atmosphere may imply that the heavier helium is slowly sinking through Saturn's hydrogen; that might explain the excess heat that Saturn radiates over the energy it receives from the Sun.</p>
+</ul>
+
+<h3>Voyager 2 Mission</h3>
+<ul>
+  <li>Forty years ago, the Voyager 2 spacecraft made its closest approach to Saturn.</p>
+  <li>It returned spectacular photographs of the rings and small shepherd moons such as Prometheus and Pandora that act to herd the rings’ particles.</p>
+  <li>Gathered data on both temperature and pressure. In the highest regions of the atmosphere (at 70 mbar), Voyager 2 recorded a temperature of 82 K (−191.2 °C; −312.1 °F). At 1,200 mbar, the temperature rose to 143 K (−130 °C; −202 °F).</p>
+  <li>The spacecraft also observed that the north pole was approximately 10 °C (18 °F) cooler at 100 mbar than mid-latitudes, a variance potentially attributable to seasonal shifts.</p>
+</ul>
+   </div>
+
+<div style="color: white;" id="satovep">
+   Saturn, the sixth planet in the solar system from the sun and the second largest. Saturn is mainly made up of hydrogen and helium, classifying the planet as a gas planet.
+With an equatorial diameter of about 74,897 miles (120,500 kilometers), Saturn is 9 times wider than Earth. If Earth were the size of a nickel, Saturn would be about as big as a volleyball.Saturn has the second-shortest day in the solar system. One day on Saturn takes only 10.7 hours (the time it takes for Saturn to rotate or spin around once), and Saturn makes a complete orbit around the Sun (a year in Saturnian time) in about 29.4 Earth years (10,756 Earth days).Saturn is home to a vast array of intriguing and unique worlds. From the haze-shrouded surface of Titan to crater-riddled Phoebe, each of Saturn's moons tells another piece of the story surrounding the Saturn system. As of June 8, 2023, Saturn has 247 moons in its orbit, the most of any planet within the solar system., with others continually awaiting confirmation of their discovery and official naming by the International Astronomical Union. Saturn is surrounded by a beautiful dense ring. Saturn's rings are thought to be pieces of comets, asteroids, or shattered moons that broke up before they reached the planet, torn apart by Saturn's powerful gravity. They are made of billions of small chunks of ice and rock coated with other materials such as dust. 
+</div>
+
+<div style="color: white;" id="satfflist">
+   <ul>
+      <li>Saturn’s Density Is Lower Than Water If you could somehow find a bathtub big enough, Saturn would float! Its average density is just 0.687 g/cm³—less than water.</p>
+      <li>It Rains Diamonds on Saturn. Deep within Saturn’s atmosphere, lightning storms turn methane into carbon, which compresses into diamond rain as it falls deeper into the planet. Yes, literal diamond precipitation.</p>
+      <li>Some of Its Moons Might have potential to Support Life Enceladus, one of Saturn’s smaller moons, has geysers ejecting water vapor from an underground ocean. It's considered one of the top candidates in the search for extraterrestrial life.</p>
+      <li>One of Saturns moons, Titan, is bigger than the planet Mercury.</p>
+      <li>The smallest moons are no larger than a sports arena</p>
+      <li>Saturn’s largest moon, Titan, has rivers, lakes, and rain, but they’re made of liquid methane and ethane, not water. It’s the only other place in the solar system known to have stable surface liquids.</p>
+      <li>a day on saturn only lasts 10.7 hours. Meaning it has a very fast rotation.</p>
+      <li>Mimas, one of Saturn’s moons, has a giant crater that makes it resemble the Death Star from Star Wars. Ironically, it has the smallest mass of any object known to be rounded by self-gravity.</p>
+      <li>Saturn’s stunning rings are ephemeral—they’re slowly being pulled into Saturn by gravity and will vanish in 100–300 million years. We're lucky to live in a time when they’re still around.</p>
+   </ul>
+</div>
+
+
+  <div style="color: white;" id="nepovep">
+   Neptune is the eighth and farthest planet from the sun. it is the fourth largest and second coldest planet in the solar system, behind Jupiter, Saturn and slightly smaller than Uranus. Neptune is primarily composed of gases, liquids and heavy compounds. Neptune is one of two ice giants in the outer solar system (the other is Uranus). Most (80% or more) of the planet's mass is made up of a hot dense fluid of "icy" materials – water, methane, and ammonia – above a small, rocky core. Of the giant planets, Neptune is the densest. 
+One day on Neptune takes about 16 hours (the time it takes for Neptune to rotate or spin once). And Neptune makes a complete orbit around the Sun (a year in Neptunian time) in about 165 Earth years (60,190 Earth days). Neptune has the fourth most amount of moons in the solar system, totalling to 16 known moons, biggest moon named Triton. Neptune has at least five main rings and four prominent ring arcs that we know of so far, not that visible, but definetly there. Starting near the planet and moving outward, the main rings are named Galle, Leverrier, Lassell, Arago, and Adams. The rings are thought to be relatively young and short-lived. Neptune does not have a solid surface. Its atmosphere (made up mostly of hydrogen, helium, and methane) extends to great depths, gradually merging into water and other melted ices over a heavier, solid core with about the same mass as Earth.Neptune's atmosphere is made up mostly of hydrogen and helium with just a little bit of methane. Neptune's neighbor Uranus has a similar makeup; the methane absorbs other colors but reflects blue, giving these ice giants their similar hue. 
+  </div>
+
+<ul style="color: white;" id="nepfflist">
+  <li>it is believed that it rains DIAMONDS on neptune!! this is due to neptunes extreme pressure and temperature forming many carbon bonds together forming diamond. if you want to be rich come here</p>
+  <li>the existance of Neptune was predicted before it was even seen, it was the first planet for its existance to be deducted through mathematics. Astronomers noticed over time, that Uranus wasn't following Newton's predicted path around the Sun. Its motion was slightly “off”—sometimes it moved too fast, sometimes too slow, or slightly off-course. Something unseen seemed to be tugging on it gravitationally. this led to them believing another planet was lingering around, after this theory came to light, it was sent to an observatory. Then boom, with the use of a telescope, Neptune was discovered. </p>
+  <li>Neptunes have Auroras, like aurora borealis aka northern lights on Earth. However, auroras on Neptune are more chaotic and not tied to poles therefore larger. They are faint and hard to detect, they were first observed using the Hubble Space Telescope in 1998.</p>
+  <li> Neptune helped discover Pluto. Astronomers searching for irregularities in Neptune and Uranus’s orbits inadvertently discovered Pluto in 1930. It was thought another massive body (“Planet X”) was tugging on Neptune — which led to Pluto’s discovery (though Pluto turned out to be too small to cause those tugs).</p>
+  <li>Triton, A moon of Neptune orbits in reverse as opposed to the other moons. Because of this, Triton is slowly spiralling inwards, which eventually will crash into Neptune.</p>
+  <li>The fastest recorded winds in the Solar System blow on Neptune, reaching speeds over 2,100 kilometers per hour (about 1,300 miles per hour), faster than the speed of sound on Earth!</p>
+  <li>Neptune was discovered in 1846, and completed its first full orbit around the Sun in 2011 — meaning we’ve only observed one Neptunian year in human history.</p>
+  <li>During a mission, a Great Dark Spot was discovered, similar to Jupiters Great Red Spot. Where raging storms occur, however, unlike Jupiters which constantly remains, Neptunes one disappeared.</p>
+  <li>Neptune emits more heat than it receives from the Sun — It radiates roughly 2.6 times more energy than it gets, suggesting an internal heat source. Scientists think this could be leftover heat from its formation or slow gravitational contraction. This heat also causes Neptune to glow.</p>
+  <li>Neptune is the only planet in our solar system not visible to the naked eye. probably due to its distance lol.</p>
+</ul>
+
+
+<div id="nepmilist" style="color: white;">
+   <h3>Voyager 2</h3>
+   <ul>
+      <li>In the summer of 1989, NASA's Voyager 2 became the first spacecraft to observe the planet Neptune up close. Due to the distance of the planet, no further missions were upheld.</p>
+      <li>the planet that Voyager 2 revealed looked like a blue-hued sibling to Jupiter and Saturn, the blue indicating the presence of methane. A massive, slate-colored storm was dubbed the “Great Dark Spot,” similar to Jupiter’s Great Red Spot.</p>
+      <li>Voyager 2 flew by Triton, and discovered unusual features such as a reverse rotation, cryogenic volcanos (ice volcanos) and that it is one of the coldest places in the solar system.</p>
+      <li>Voyager 2 discovered The Great Dark Spot, a massive anticyclonic storm system in Neptune’s atmosphere, comparable in size to Earth.</p>
+      <li>Voyager 2 discovered five main rings: Galle, Le Verrier, Lassell, Arago, and Adams. Found "ring arcs"—clumpy, uneven structures in the rings that don't fully encircle the planet, defying expected ring behavior.</p>
+      <li>Voyager 2 discovered six new small moons, bringing Neptune's total at the time to eight (now known to be 16+). Moons like Naiad, Thalassa, and Despina orbit very close to the planet and may help shepherd its rings.</p>
+   </ul>
+
+   <h3>No more missions.</h3>
+</div>
+
+
+<div style="color: white;" id="nepsym">
+   <div id="nepast">
+   <p>Neptune, God of the Sea, is the ruler of Pisces. In astrology, Neptune is considered a planet of inspiration, dreams, psychic receptivity, illusion, and confusion. Neptune rules spirituality, and all things subtle. A youthful, and sometimes naive, spirit characterizes those with a strong placement of Neptune in their natal charts.</p>
+   <p>Neptune is highly compassionate, idealistic, and imaginative. It is considered a planet of inspiration, dreams, and psychic receptivity. Neptune rules spirituality, and all things subtle. The more negative manifestations of Neptune include deception, trickery, deceit, guilt, and addiction associated with drugs, alcohol, or even media and fantasy. Its position in a person's chart would indicate where there may be confusion or illusion, and also great creativity in the poetic and musical fields.</p>
+   <p><strong>Neptune in Aries</strong></p>
+<ul>
+  <li>Your spiritual practice and imagination focus on understanding identity.</li>
+  <li>Explores the question: Are we human beings having a spiritual experience, <br> or spiritual beings having a human experience?</li>
+  <li>Neptune enters Aries in 2025, sparking new personal spiritual awakenings.</li>
+</ul>
+
+<p><strong>Neptune in Taurus</strong></p>
+<ul>
+  <li>You connect to imagination and divinity through beauty and pleasure.</li>
+  <li>Art, aesthetics, and visual storytelling help you feel connected <br>to a higher power.</li>
+  <li>Focus on grounding spiritual creativity in the material world.</li>
+</ul>
+
+<p><strong>Neptune in Gemini</strong></p>
+<ul>
+  <li>Your relationship to divinity and creativity is mental and conversational.</li>
+  <li>Meaningful dialogue helps answer life’s existential questions.</li>
+  <li>Intellectual curiosity drives your spiritual journey.</li>
+</ul>
+
+<p><strong>Neptune in Cancer</strong></p>
+<ul>
+  <li>Emotions are sacred data connecting you to creative gifts.</li>
+  <li>Strong link to ancestral practices and cultural traditions.</li>
+  <li>Emotional healing is central to your spiritual growth.</li>
+</ul>
+
+<p><strong>Neptune in Leo</strong></p>
+<ul>
+  <li>Charismatic spiritual connection inspires leadership and creativity.</li>
+  <li>Live with courage and openness, guiding others with heart.</li>
+  <li>Express your unique soul through artistic and personal power.</li>
+</ul>
+
+<p><strong>Neptune in Virgo</strong></p>
+<ul>
+  <li>Find spiritual truth and creativity through simplicity and order.</li>
+  <li>Healing and imagination arise from disciplined, practical steps.</li>
+  <li>Focus on good, orderly direction in your spiritual practices.</li>
+</ul>
+</div>
+<div id="nepast2">
+<p><strong>Neptune in Libra</strong></p>
+<ul>
+  <li>Relationships become a spiritual practice for growth and harmony.</li>
+  <li>Skills in diplomacy and understanding bring peace and justice.</li>
+  <li>Connect with others to co-create beauty and mercy.</li>
+</ul>
+
+<p><strong>Neptune in Scorpio</strong></p>
+<ul>
+  <li>Deep quest for truth and intimacy in relationships.</li>
+  <li>Explore hidden dimensions of honesty and transformation.</li>
+  <li>Reveal truth to foster meaningful connection.</li>
+</ul>
+
+<p><strong>Neptune in Sagittarius</strong></p>
+<ul>
+  <li>Hope and vision inspire transformation through learning and travel.</li>
+  <li>Spiritual creativity thrives on expansion and adventure.</li>
+  <li>Explore big-picture meaning and possibilities.</li>
+</ul>
+
+<p><strong>Neptune in Capricorn</strong></p>
+<ul>
+  <li>Ground your spirituality in discipline, integrity, and accountability.</li>
+  <li>Stay centered and responsive with practical spiritual practices.</li>
+  <li>Use impulse control as a tool for growth and leadership.</li>
+</ul>
+
+<p><strong>Neptune in Aquarius</strong></p>
+<ul>
+  <li>Embrace disruption and innovative ideas as spiritual catalysts.</li>
+  <li>Work with like-minded visionaries to change the status quo.</li>
+  <li>Keep your ideals clear and actionable.</li>
+</ul>
+
+<p><strong>Neptune in Pisces</strong></p>
+<ul>
+  <li>Focus on universal themes of forgiveness, mercy, and love.</li>
+  <li>Help others heal and progress with compassion.</li>
+  <li>Access deep spiritual empathy and connection to all life.</li>
+</ul>
+</div>
+</div>
+
+
+   <div style="color: white; z-index: 99999;" id="mercurysymbol">
+
+      <div id="mersym">
+         The astrological symbol for the planet Mercury is taken from this God's wand or caduceus, which is typically depicted as a short herald's staff entwined by two serpentine creatures, and which in later antiquity became the astrological symbol for commerce. A variation of this caduceus has come to symbolize medicine in modern times.
+
+         Mercury represents the mind and intellect, and rules Gemini, (the sign of duality), and also Virgo. It has its exaltation in Aquarius. Mercury is an airy planet, associated with all forms of communication and the in-flow and out-flow of intelligence and communication. Its position indicates how your mental function will be expressed, and where techniques and skills are available to you.
+
+         Mercury retrograde, which occurs three times a year for about three weeks each time, is interpreted particularly strongly. Mental pursuits and connections break down. The Mercury retrograde period is best used as a time for inner reflection. It is not a good time for making new decisions or new business plans, but it is ideal for reflecting on your current situation. It is best to quietly observe your inner process during Mercury retrograde, and to carry forward with your preexisting plans. Ask yourself: Where am I heading in my life at this particular juncture? 
+
+  <p><strong>Mercury in Aries</strong></p>
+  <ul>
+    <li>Sharp, direct, original, and funny in a biting way — you will clap back.</li>
+    <li>Can be argumentative and tactless when in a mood.</li>
+    <li>Rely on instincts rather than rational plans; fortune favors the brave.</li>
+    <li>Good fit for publishing or literary work.</li>
+  </ul>
+
+  <p><strong>Mercury in Taurus</strong></p>
+  <ul>
+    <li>Fantastic memory and perceptive observer—you don’t miss or forget anything.</li>
+    <li>Practical and detailed intellect, can be rigid once opinions are formed.</li>
+    <li>May repeat yourself (emphasizing).</li>
+    <li>Good careers: fashion designer, interior decorator, antiques dealer.</li>
+  </ul>
+
+  <p><strong>Mercury in Gemini</strong></p>
+  <ul>
+    <li>Super fast, curious, and versatile.</li>
+    <li>Broad interests but sometimes surface-level knowledge; excellent bluffer.</li>
+    <li>Loves talking; others love listening.</li>
+    <li>Typical careers: journalist, interviewer, talk show host.</li>
+  </ul>
+
+  <p><strong>Mercury in Cancer</strong></p>
+  <ul>
+    <li>Imaginative, intuitive, intensely personal, social chameleon.</li>
+    <li>Reads a room quickly and adapts to work it.</li>
+    <li>Understands the world through personal experience.</li>
+    <li>Drawn to academic or poetic pursuits.</li>
+  </ul>
+
+  <p><strong>Mercury in Leo</strong></p>
+  <ul>
+    <li>Fiery temper, warm passion, love of fun, thirst for success.</li>
+    <li>Magnetic personality and natural-born leader.</li>
+    <li>Needs to keep urge to show off in check.</li>
+    <li>Good careers: CEO, athlete, celebrity.</li>
+  </ul>
+
+  <p><strong>Mercury in Virgo</strong></p>
+  <ul>
+    <li>Born statistician, logical and data-driven.</li>
+    <li>Needs all info before deciding; resistant if reality differs from expectations.</li>
+    <li>Tends to take on too much; needs to focus.</li>
+    <li>Great scientist or researcher.</li>
+  </ul>
+</div>
+<div id="merast2">
+  <p><strong>Mercury in Libra</strong></p>
+  <ul>
+    <li>Social, empathetic, thoughtful; dislikes making waves.</li>
+    <li>Takes time to make perfect decisions using pro/con lists.</li>
+    <li>Works well in business partnerships smoothing others’ sharp edges.</li>
+    <li>Good diplomat or mediator.</li>
+  </ul>
+
+  <p><strong>Mercury in Scorpio</strong></p>
+  <ul>
+    <li>Natural loner, witty, investigative (like Harriet the Spy).</li>
+    <li>Curious about secrets and darker matters.</li>
+    <li>Stubborn and challenging; won’t tolerate obstacles.</li>
+    <li>Good documentary maker or detective.</li>
+  </ul>
+
+  <p><strong>Mercury in Sagittarius</strong></p>
+  <ul>
+    <li>Eternal student and traveler, hungry for knowledge and news.</li>
+    <li>Restless, optimistic, hates being pinned down.</li>
+    <li>Natural rebel always on the move.</li>
+    <li>Good careers: travel vlogger, reality producer, writer.</li>
+  </ul>
+
+  <p><strong>Mercury in Capricorn</strong></p>
+  <ul>
+    <li>Calculating, serious, rational, ambitious.</li>
+    <li>Always strategic, life is a game to win.</li>
+    <li>Wicked dark sense of humor.</li>
+    <li>Natural leader.</li>
+  </ul>
+
+  <p><strong> Mercury in Aquarius</strong></p>
+  <ul>
+    <li>Mind operates on another level, clever and inquisitive.</li>
+    <li>Great at sizing up people and predicting outcomes.</li>
+    <li>Fits well in progressive fields like arts, engineering, technology.</li>
+  </ul>
+
+  <p><strong>Mercury in Pisces</strong></p>
+  <ul>
+    <li>More a feeler than a thinker, guided by intuition.</li>
+    <li>Kind of psychic, deeply compassionate.</li>
+    <li>Drawn to charity and humanitarian work.</li>
+  </ul>
+  </div>
+</div>
+
+<div id="mercmission" style="color: white;">
+  <h3>Mariner 10</h3>
+  <ul>
+    <li>First spacecraft sent to Mercury and the first mission to explore two planets (Mercury and Venus) during a single mission.</li>
+    <li>Used Venus to bend its flight path and bring its perihelion down to Mercury's orbit.</li>
+    <li>Objectives: measure Mercury's environment, atmosphere, surface, and body characteristics, and conduct similar investigations of Venus.</li>
+    <li>Revealed a weak magnetic field using onboard magnetometers.</li>
+    <li>Recorded nighttime temperatures of -297°F (-183°C) and daytime highs of 369°F (187°C).</li>
+    <li>Returned over 2,700 pictures across three Mercury flybys, covering nearly half the planet’s surface.</li>
+    <li>Discovered the Caloris Basin — a large impact crater with concentric rings, about 1,550 miles (2,500 km) in diameter.</li>
+  </ul>
+
+  <h3>MESSENGER</h3>
+  <ul>
+    <li>Launched on August 3, 2004, into Earth orbit, then used a PAM-D motor to enter heliocentric orbit.</li>
+    <li>Entered orbit around Mercury on March 18, 2011; began data collection on April 4.</li>
+    <li>Found high concentrations of magnesium and calcium on Mercury’s night side.</li>
+    <li>Identified a northward offset of Mercury’s magnetic field from the planet’s center.</li>
+    <li>Discovered large amounts of water in Mercury’s exosphere.</li>
+    <li>Found strong evidence of past volcanic activity on the surface.</li>
+  </ul>
+
+  <h3>BepiColombo</h3>
+  <ul>
+    <li>Europe’s first mission to Mercury, launched on October 20, 2018.</li>
+    <li>Currently en route, expected to arrive in late 2025 after a 7-year journey.</li>
+    <li>Will endure extreme temperatures exceeding 350°C.</li>
+    <li>Primary science mission planned for one year, with potential one-year extension.</li>
+    <li>No scientific results yet — mission is still in transit.</li>
+  </ul>
+</div>
+
+
+
+
+   <div style="color: white;" id="merovep">Mercury is the smallest planet in the solar system and the closest planet to the sun. Mercury is only slightly larger than the Earths moon, having a surface area of 74.8 million kilometers, compared to the Earths moon of a surface area of 38 million kilometers. It is the fastest planet, being able to orbit the sun in just 88 days, lower than any other planet in our solar system, Hence the name, Mercury, also belongs to the swiftest ancient roman god. It is a terrestrial rocky planet with a very thin atmosphere made up of oxygen, sodium, hydrogen, helium, and potassium, with trace amounts of other gases. Mercury's surface temperatures are both extremely hot and cold. Because the planet is so close to the Sun, day temperatures can reach highs of 800°F (430°C). Without an atmosphere to retain that heat at night, temperatures can dip as low as -290°F (-180°C).
+Mercury's environment is not conducive to life as we know it. The temperatures and solar radiation that characterize this planet are most likely too extreme for organisms to adapt to. Mercury's surface resembles that of Earth's Moon, scarred by many impact craters resulting from collisions with meteoroids and comets.</div>
+
+
+<div style="color: white;" id="merfflist">
+   <li>Mercury is continuously shrinking! slightly and slowly but is shrinking! this is due to the core being cold and constantly solidifying, causing it to contract, pulling the outer crust inwards, causing it to shrink.</p>
+   <li>Mercury has a comet-like tail made of sodium atoms. This tail is constantly being pushed by solar radiation and can extend millions of kilometers into space!</p>
+   <li>Mercury has no moons or rings, due to the sun being a greedy shit.</p>
+   <li>Despite the fact that Mercury is the closest to the sun, Water is still able to exist on it. MESSENGER confirmed water ice and even organic compounds in these dark regions.</p> 
+   <li>You Can See Mercury with the Naked Eye—But It’s Really Tricky Despite being visible without a telescope, many people go their whole lives without ever seeing Mercury. Why? Because it's always so close to the Sun, you can only spot it right after sunset or before sunrise, and only during certain times of the year.</p>
+   <li> Craters on Mercury are named after famous artists, musicians, writers, and other contributors to the arts and humanities. Example: Shakespeare, Beethoven,  J.R.R. Tolkien.</p>  
+   <li>You Can Sometimes See Mercury During a “Transit” Rarely, Mercury passes directly between Earth and the Sun, appearing as a tiny black dot moving across the Sun’s face. This event is called a transit of Mercury, and only happens about 13–14 times per century.</p> 
+</div>
+
+
+
+
+   <div id="marsimg">
+      <img src="Marss.webp" style="position: absolute; left: 620px; top: 130px; width: 400px;">
+      <img src="marss3.jpg"  style="position: absolute; left: 1040px; top: 130px; width: 338px;">
+      <img src="marssunset.jpg" style="position: absolute; left: 1400px; top: 130px; width: 300px;">
+      <img src="bill.jpg" style="position: absolute; left: 620px; top: 400px; width: 400px;">
+      <img src="heli.webp" style="position: absolute; left: 1040px; top: 400px; width: 400px;">
+      <img src="marsbro.jpg" style="position: absolute; left: 1450px; top: 400px; width: 250px;">
+      <img src="marsmoon.webp" style="position: absolute; left: 620px; top: 700px; width: 400px;">
+   </div>
+   <p style="z-index: 10; color: white;" class="marovp" id="marovp">Mars, known as the red planet, is the fourth planet from the sun and in the solar system, it is orbited by two moons: Phobos and Deimos. It is the most explored planet in the entire solar system. Mars was named by the ancient Romans for their god of war because its reddish color was reminiscent of blood. Mars is about half the size of Earth, having a diameter of 4,212 miles. Mars completes one rotation every 24.6 hours meaning a day on Mars lasts 24.6 hours. One year on Mars lasts 687 days! as opposed to 365 days on Earth. The Red Planet is home to both the highest mountain and the deepest, longest valley in the solar system. Olympus Mons is roughly 17 miles high, about three times as tall as Mount Everest, while the Valles Marineris system of valleys,  named after the Mariner 9 probe that discovered it in 1971, reaches as deep as 6 miles (10 km) and runs east-west for roughly 2,500 miles (4,000 km), about one-fifth of the distance around Mars and close to the width of Australia.is three times as tall as mount Everes (David C. Agle 2023). Mars has a very thin atmosphere, meaning it is unable to host liquid water for a long period of time as it would just freeze within a few seconds, Mars is practically just one big desert planet.</p>
+
+ <p style="z-index: 10; color: white;" class="marovp2" id="marovp2">As mentioned earlier: Mars has two moons. These two moons were discovered in 1877 by American astronomer Asaph Hall over the course of a week. Hall had almost given up his search for a moon of Mars, but his wife, Angelina, urged him on. He discovered Deimos the next night, and Phobos six days after that. He named the moons after the sons of the Greek war god Ares — Phobos means "fear," while Deimos means "rout." It remains uncertain how these moons came about but it is theorised that these are random asteroids that were captured by Mars gravitational field. </p>
+
+ <ul style="color: white;" id="marsfflist">
+   <li>One of Mars' moon, Phobos, is on a constant spiral towards Mars. This means that eventually, Phobos will crash into Mars! breaking into little pieces. The reason why it is on this spiral is due to Phobos rotating faster than Mars.</li><br>
+   <li>Deimos, The other moon of Mars, is spiralling away from Mars! as opposed to towards mars like Phobos. This means that eventually Deimos will spiral away from Mars and no longer orbit it. Both of Mars' moons seem to hate it lol.</li><br>
+   <li>A dust storm on Mars is so harsh that one dust storm is capable of covering the entire planet.</li><br>
+   <li>Mars is the only planet humanity has been able to send Robots onto to continue research meaning Mars is completely covered by robots. to know more: Look at the Missions to mars section.</li><br>
+   <li>Due to the way the atmosphere is scattered on Mars, Sunsets on the planet are the colour blue</li><br>
+   <li>Mars contains signs of ancient lakes and rivers. This supports the theory that Microbial life once existed on Mars and that at one point Mars was habitable. But due to changes in Atmosphere, this is no longer the case.</li><br>
+   <li>Mars Has Inspired Real Food Tech
+NASA has developed “space food” for Mars missions, including ways to grow plants with limited water and soil. Some experiments use Martian soil (material found on mars) simulant mixed with Earth nutrients to see if crops like potatoes or lettuce can thrive. it doesnt.</li><br>
+   <li>We actually have pieces of Mars on Earth — meteorites blasted off Mars by asteroid impacts sometimes land here. Scientists study these rocks to learn about Mars without leaving Earth.</li><br>
+   <li>Mars Has Its Own Weather Report
+NASA and other agencies regularly release weather updates from Mars, including temperature, wind speeds, and dust conditions</li><br>
+ </ul>
+
+<div style="color: white;" id="marsmissions">
+   <h3>NASA's Viking 1</h3>
+   <ul>
+   <li>Viking 1 was the first of a pair of complex deep space probes that were designed to reach Mars and to collect evidence on the possibility on life on Mars.</p>
+   <li>It landed on a plain called the Chryse Planitia (in greek this means: "Golden Pillar")</p>
+   <li>Once the spacecraft landed, it began taking pictures of its surroundings in the form of high resolution images and panoromas</p>
+   <li>It also took temperature checks of mars, obtaining information that the conditions were -86 degrees celcius before dawn and -33 degree celcius in the afternoon</p>
+   <li>On July 28, 1976, the lander’s robot arm scooped up the first soil samples and deposited them into a special biological laboratory that included a gas chromatograph mass spectrometer.</p>
+   <li>The cumulative data from the four samples collected could have been construed as indicating the presence of life (weak positive), but the major test for organic compounds using the gas chromatograph experiment (capable of detecting organic compounds that comprised more than 10-100 parts per billion in the soil) gave negative results.</p>
+   <li>Data showed an abundance of sulfur, certainly different from any known material found on Earth or the Moon.</p>
+   <li>The spacecraft then continued its journey up until 1982, until we lost contact with it and was unable to initiate communication any further.</p>
+   </ul>
+   <h3>Sojourner</h3>
+   <ul>
+      <li>Sojourner, a spacecraft named after Sojourner Truth, an African-American abolitionist and women’s rights activist </p>
+      <li>The Sojourner was a Vehicle, and was the first ever space craft to drive on an external planet.</p>
+      <li>The rover was equipped with front and rear cameras, and hardware that was used to conduct several scientific experiments. (entire thing was broadcasted online for everyone to watch, was quite cool)</p>
+      <li>Sojourner was used to analyse martial rocks and soil. Sojourner's first analysis of a rock on Mars with the study of Barnacle Bill, a nearby rock named for its rough surface. They found it to be unexpectedly rich in silicates, similar to andesite found on Earth above subducted oceanic crust. This discovery suggested a more complex and diverse geological history for Mars than previously assumed.</p>
+      <li>Sojourner's Alpha Proton X-Ray Spectrometer (APXS) revealed that the rocks at the landing site had varying compositions, including silica, which can be a sign of thermal activity, suggesting a potentially more complex geological history for Mars.</p>
+      <li> What excited scientists the most, though, were the pictures beaming back to Earth showing rounded pebbles and "conglomerate" rocks that indicated something pushing different types of soil together in the past. NASA said this was evidence of a more water-rich planet, and suggested the plain Sojourner sampled was formed from floods that originated nearby the landing site.</p>   
+   </ul>
+   <h3>Perseverance Rover & Ingenuity Helicopter</h3>
+   <ul>
+      <li>These two spacecrafts were sent to try and discover signs of ancient life!! First ever missions with this specific goal.</p>
+      <li>The Mars 2020 Perseverance Rover searches for signs of ancient microbial life, to advance NASA's quest to explore the past habitability of Mars.</p>
+      <li>Scientists went through 60 different locations on mars and came to the conclusion that Jezero Crater was the best site due to its nature being a large indicator of existance of rivers, seas on the planet, insinuating previous habituality</p>
+      <li>Igneous and sedimentary rocks were obtained indicating existance of volcanos</p>
+      <li>The rover was able to detect organic molecules, heavily supporting the theory that life once existed on Mars.</p>
+      <li>NASA created MOXIE, which stands for: Mars Oxygen ISRU Experiment. MOXIE produces molecular oxygen through an electrochemical process that separates one oxygen atom from each molecule of carbon dioxide. Designed specifically for carbon dioxide rich atmoshphere like Mars. It is impossible to breath on Mars due to the overbearing amount of CO2. MOXIE's mission was succesfull! Meaning that MOXIE was able to release Oxygen into the atmosphere of Mars, increasing the ability to habitabilise Mars.</p>
+      <li>The ingenuity helicopter was the first ever of its type of machine to make it on Mars. (its basically a drone called a helicopter for some reason)</p>
+      <li>The first aircraft to achieve powered, controlled flight on another planet, a feat that's been called a "Wright Brothers moment."</p>
+      <li>Helped scout terrain, identify hazards, and plan routes for Perseverance.</p>
+   </ul>
+
+</div>
+
+<div style="color: white; z-index: 99999;" id="marsymbol">
+   <div id="symars">
+   <h3>Astrology</h3>
+   <p>In astrology, Mars is the planet of outward activity and animal passion including our sexual drive, aggression, and anger. Mars rules Aries and is exalted in Capricorn. This fiery planet is masculine in action, versus the softer more receptive and romantic Venus. When strong in the chart it can indicate a volatile temper, and also great courage. Its position indicates how your personality will assert itself, and what modes of activity will stimulate your physical energies, or your anger. By house, Mars represents where you will assert yourself, and where you will take action in the most positive sense.</p>
+   <p>Mars is classified as a malefic, or a trigger for challenges, and rules over both of the zodiac signs Scorpio and Aries, which are known for being reactive and argumentative when provoked. Scorpio connects with the strategic side of battle, while Aries aligns with the physical and explosive side of conflict. Therefore, Mars is in its detriment when it is placed in the opposite signs it rules: cooperative air sign Libra or indulgent earth sign Taurus. Mars also thrives in the structure of earth sign Capricorn, yet is uncomfortable in the emotional waters of Cancer.</p>
+   <p>Understanding Mars’ placement in your birth chart can provide valuable information about your motivations, desires, and approach to life’s challenges. It essentially shows you what (or who) turns you on in life. As you explore how Mars’ energy manifests differently through each of the 12 zodiac signs, keep in mind that Mars is also influenced by your unique birth chart.</p>
+   <p><ul>
+   </div>
+   <div id="marsast">
+  <li><strong>Mars in Aries</strong>
+    <ul>
+      <li>Traits: Bold, impulsive, action-oriented, competitive.</li>
+      <li>Conflict Style: Quick to anger, but quick to move on.</li>
+      <li>Drive: Loves challenges, initiates fast, thrives under pressure.</li>
+    </ul>
+  </li>
+  
+  <li><strong>Mars in Taurus</strong>
+    <ul>
+      <li>Traits: Steady, persistent, sensual, values-driven.</li>
+      <li>Conflict Style: Slow to anger, but very stubborn when provoked.</li>
+      <li>Drive: Motivated by material security, comfort, and stability.</li>
+    </ul>
+  </li>
+  
+  <li><strong>Mars in Gemini</strong>
+    <ul>
+      <li>Traits: Energetic, curious, mentally agile, multitasker.</li>
+      <li>Conflict Style: Verbal, witty, may joke or argue through tension.</li>
+      <li>Drive: Craves variety and intellectual stimulation.</li>
+    </ul>
+  </li>
+
+  <li><strong>Mars in Cancer</strong>
+    <ul>
+      <li>Traits: Protective, emotionally reactive, nurturing.</li>
+      <li>Conflict Style: Passive-aggressive or moody, emotionally driven.</li>
+      <li>Drive: Motivated by emotional bonds and family.</li>
+    </ul>
+  </li>
+
+  <li><strong>Mars in Leo</strong>
+    <ul>
+      <li>Traits: Confident, proud, charismatic, dramatic.</li>
+      <li>Conflict Style: Prone to dramatic displays when ego is wounded.</li>
+      <li>Drive: Motivated by recognition, pride, and leadership.</li>
+    </ul>
+  </li>
+  
+
+  <li><strong>Mars in Virgo</strong>
+    <ul>
+      <li>Traits: Analytical, disciplined, perfectionist.</li>
+      <li>Conflict Style: Critical and detailed; may suppress frustration.</li>
+      <li>Drive: Focused on improvement, structure, and service.</li>
+    </ul>
+  </li>
+  </div>
+<div id="marsast2">
+  <li><strong>Mars in Libra</strong>
+    <ul>
+      <li>Traits: Diplomatic, charming, fairness-seeking.</li>
+      <li>Conflict Style: Indirect, avoids confrontation, uses persuasion.</li>
+      <li>Drive: Desires harmony, partnership, and beauty.</li>
+    </ul>
+  </li>
+
+  <li><strong>Mars in Scorpio</strong>
+    <ul>
+      <li>Traits: Intense, strategic, emotionally deep.</li>
+      <li>Conflict Style: Controlled, vengeful, doesn’t forget wrongs.</li>
+      <li>Drive: Fueled by passion, power, and transformation.</li>
+    </ul>
+  </li>
+
+  <li><strong>Mars in Sagittarius</strong>
+    <ul>
+      <li>Traits: Adventurous, optimistic, blunt.</li>
+      <li>Conflict Style: Direct and honest; sometimes tactless.</li>
+      <li>Drive: Motivated by freedom, truth, and exploration.</li>
+    </ul>
+  </li>
+
+  <li><strong>Mars in Capricorn</strong>
+    <ul>
+      <li>Traits: Ambitious, disciplined, goal-oriented.</li>
+      <li>Conflict Style: Cold, calculated, and firm.</li>
+      <li>Drive: Strives for success, structure, and achievement.</li>
+    </ul>
+  </li>
+
+  <li><strong>Mars in Aquarius</strong>
+    <ul>
+      <li>Traits: Innovative, independent, unconventional.</li>
+      <li>Conflict Style: Detached, unpredictable, idea-driven.</li>
+      <li>Drive: Seeks progress, innovation, and reform.</li>
+    </ul>
+  </li>
+
+  <li><strong>Mars in Pisces</strong>
+    <ul>
+      <li>Traits: Compassionate, imaginative, sensitive.</li>
+      <li>Conflict Style: Avoidant, emotional, indirect.</li>
+      <li>Drive: Motivated by ideals, dreams, and emotion.</li>
+    </ul>
+  </li>
+</ul>
+</div>
+</div>
+
+<div style="color: white;" id="venusovep">
+   <p>Venus is the second planet from the Sun and is often called Earth's "sister planet" due to its similar size and rocky composition. Despite these similarities, Venus has an extremely harsh environment. Its surface temperature averages around 465°C (869°F), making it the hottest planet in the solar system, primarily due to a thick atmosphere composed mostly of carbon dioxide that traps heat through a runaway greenhouse effect. The planet’s atmosphere is also laced with clouds of sulfuric acid and has a surface pressure over 90 times that of Earth’s, equivalent to the pressure found nearly a kilometer underwater on Earth. Venus rotates very slowly and in the opposite direction of most planets, with one rotation taking longer than its orbit around the Sun. The planet has no moons or rings and lacks a magnetic field. Its surface features include vast volcanic plains, highland regions, and large mountains, suggesting significant geological activity. Although Venus’s surface is obscured by dense clouds, radar mapping missions have revealed much about its terrain. Past missions, such as those from the Soviet Venera series and NASA’s Magellan, have helped scientists study the planet, with more advanced missions planned for the future.</p>
+</div>
+
+<ul id="venusfflist" style="color: white;">
+   <li>A day on Venus lasts longer than a year on Venus! This is because Venus orbits the sun faster than it completes a single rotation. a day on venus lasts 243 Earth days and a year on Venus lasts 225 days.</p>
+   <li>Venus is the brightest planet in our solar system and can actually be seen from Earth from the naked eye! However, locating the exact spot to look at is difficult. Due to this, Venus is called the morning star or evening star.</p>
+   <li>Venus has more volcanoes than any other planet in the solar system—over 1,600 major volcanoes.</p>
+   <li>Venus has no moons, theorised to be because it is too close to the sun so any potential moon just gets pulled by the sun (greedy shit)</p>
+   <li>Being on venus would feel like being 1 kilometer under water due to the insane pressure it has. you would also evaporate but yk if you could somehow land on it</p>
+   <li>Venus’s atmosphere has an unusually high ratio of deuterium (a heavy form of hydrogen) to normal hydrogen. This implies Venus once had much more water that was gradually lost to space. meaning that venus could potentially have been habitable</p>
+   <li>The International Astronomical Union has designated that all surface features on Venus are named after famous women or goddesses.</p>    
+   <li>Venus’s atmosphere creates a mysterious “glow” in ultraviolet light that scientists still don’t fully understand—some think it’s caused by unknown chemical reactions or particles.</p>             
+</ul>
+
+<div id="venusmission" style="color: white; z-index: 99999;">
+   <h3>Venera 13</h3>
+   <ul>
+      <li>Venera 13 returned the first color images of the surface of Venus, revealing an orange-brown flat bedrock surface covered with loose regolith and small flat thin angular rocks.</p>
+      <li>Venera 13 also extended a drilling arm to the surface, picked up a bit of Venusian regolith, or soil, and analyzed it inside a sealed chamber. The results showed that the surface characteristics correspond to compacted ash material such as volcanic tuff [rock]</p>
+      <li>These missions revealed that the soils on Venus are primarily igneous in nature, with a chemical composition similar to basalt and granite found on Earth.</p>
+      <li>Further experiments by Venera 13 and 14 explored the rocks in more detail, hinting at possible sedimentary processes despite the absence of water on the planet. The analysis from these missions suggested that Venus may still be geologically active, as indicated by the presence of sulfur and other volcanic elements</p>
+      <li>It operated under temperatures of ~465°C (869°F) and pressures 90 times greater than Earth’s.</p> 
+      <li>Its success was a technological triumph, proving that data collection under such harsh conditions was possible.</p>       
+   </ul>
+   <h3>Pioneer Venus Project</h3>
+   <ul>
+   <li>The Pioneer Venus Project consisted of two separate missions: the Orbiter (launched in 1978) and the Multiprobe.</p>
+   <li>The Orbiter mapped nearly the entire surface of Venus using radar imaging, revealing mountains, volcanoes, and vast plains beneath the thick clouds.</p>
+   <li>The Multiprobe deployed four small probes into Venus’s atmosphere, collecting data on temperature, pressure, winds, and chemical composition as they descended.</p>
+   <li>One of the small probes continued transmitting data for over an hour after reaching the surface, far exceeding expectations.</p>
+   <li>The mission significantly advanced understanding of Venus’s dense atmosphere and cloud structure, including the discovery of lightning-like activity and complex atmospheric circulation.</p>
+   <li>The Orbiter also studied the ionosphere and solar wind interactions with Venus, contributing valuable data for comparative planetology.</p>
+   </ul>
+   <h3>Magellan</h3>
+<ul>
+   <li>Magellan was launched by NASA in 1989 and became the first planetary mission to be launched by a space shuttle.</p>
+   <li>It used synthetic aperture radar (SAR) to map 98% of Venus's surface through its dense cloud cover.</p>
+   <li>The mission produced the most detailed maps of Venus ever created, revealing features like vast volcanic plains, large impact craters, and tectonic deformations.</p>
+   <li>Magellan's data showed that about 85% of Venus’s surface is covered with volcanic flows, providing strong evidence for extensive volcanic activity.</p>
+   <li>The mission helped identify coronae—large circular structures possibly formed by mantle plumes—unique to Venusian geology.</p>
+   <li>It concluded in 1994 with a controlled descent into Venus’s atmosphere, gathering data on atmospheric density before disintegration.</p>
+</ul>
+</div>
+
+<div id="venusimg">
+  <img src="venusurface.webp" style="width: 500px; position: absolute; left: 630px; top: 150px;">
+  <img src="venusear.webp" style="width: 550px; position: absolute; left: 1150px; top: 150px;">
+
+</div>
+
+<div id="venussymbol" style="color: white; z-index: 99999;">
+   <div id="venusa">
+<p>Venus, or the Greek Aphrodite, is the Goddess of love, beauty, and relationship. The planet probably gets her name because she is so very bright and beautiful! Venus is in-taking, rather than out-going (as represented by Mars), and rules the signs Libra and Taurus. Venus has its exaltation in Pisces, and is associated with aesthetics, beauty, refinement and romance. Its position in the chart indicates the area in which the give and take of love, affection, and sensual pleasure will be expressed. The position of Venus also shows a person's perception of relationship and affection. Or, the qualities and expressions of affection that someone may be most receptive to, or comfortable with. A person with Venus in Leo may have a much different perception of love and romance than a person with Venus in Cancer! Wherever she lies in your chart, or that chart of your lovers and friends, she is sure to play a big role in your romantic endeavors, quest for beauty, and potential for love!  Venus is the only planet in the Solar System named after a female figure, since Ceres and Eris are dwarf planets.</p>
+<p>Your Venus placement — exactly where Venus was located at the exact date, time and location of your birth — reveals the way you love, what you value, and the type of indulgence you crave.</p>
+<h3>Venus in Aries</h3>
+<ul>
+  <li>Loves engaging in playful debates, especially with close companions.</li>
+  <li>Feels fulfilled through asserting their views and hearing opposing ones.</li>
+  <li>Thrives on competition and takes pride in being the best at what they do.</li>
+</ul>
+
+<h3>Venus in Taurus</h3>
+<ul>
+  <li>Finds joy in creativity, artistry, and sensory pleasures.</li>
+  <li>Stubborn in artistic vision, often expressing it through crafts or cooking.</li>
+  <li>Feels happiest when making beautiful or indulgent things for loved ones.</li>
+</ul>
+
+<h3>Venus in Gemini</h3>
+<ul>
+  <li>Delights in gossip, stories, and entertainment media.</li>
+  <li>Drawn to conversations about relationships and real-life dramas.</li>
+  <li>Enjoys watching the drama unfold—as long as it’s not personal.</li>
+</ul>
+
+<h3>Venus in Cancer</h3>
+<ul>
+  <li>Finds joy in simple, comforting activities with loved ones.</li>
+  <li>Deeply values emotional warmth and familiarity.</li>
+  <li>Feels happiest in cozy, nurturing environments surrounded by love.</li>
+</ul>
+
+<h3>Venus in Leo</h3>
+<ul>
+  <li>Loves giving and receiving thoughtful gifts as tokens of affection.</li>
+  <li>Seeks appreciation and recognition from loved ones.</li>
+  <li>Prepares celebrations and gifts far in advance, valuing the theatrical gesture.</li>
+</ul>
+
+<h3>Venus in Virgo</h3>
+<ul>
+  <li>Finds peace through nature and practical hands-on projects.</li>
+  <li>Enjoys gardening, volunteering, and acts of service.</li>
+  <li>Feels fulfilled by contributing beauty and care to the world.</li>
+</ul>
+<div id="venusa2">
+<h3>Venus in Libra</h3>
+<ul>
+  <li>Feels happiest in loving, reciprocal relationships.</li>
+  <li>Seeks balance, harmony, and partnership in all aspects of life.</li>
+  <li>Love and companionship are core to their sense of joy.</li>
+</ul>
+
+<h3>Venus in Scorpio</h3>
+<ul>
+  <li>Drawn to mysteries, secrets, and emotional depth.</li>
+  <li>Relies on intuition more than logic in love and life.</li>
+  <li>Feels joy from uncovering truths and solving hidden problems.</li>
+</ul>
+
+<h3>Venus in Sagittarius</h3>
+<ul>
+  <li>Loves travel, adventure, and meeting people from all walks of life.</li>
+  <li>Finds joy in cultural exploration and learning new philosophies.</li>
+  <li>Happiness comes from freedom, movement, and new experiences.</li>
+</ul>
+
+<h3>Venus in Capricorn</h3>
+<ul>
+  <li>Feels joy through reflection and preserving the past.</li>
+  <li>Enjoys creating tangible memories like scrapbooks and time capsules.</li>
+  <li>Finds beauty in structure, tradition, and long-term planning.</li>
+</ul>
+
+<h3>Venus in Aquarius</h3>
+<ul>
+  <li>Finds happiness through activism and helping humanity.</li>
+  <li>Feels fulfilled when working for a cause or sparking societal progress.</li>
+  <li>Enjoys community involvement, protests, and spreading awareness.</li>
+</ul>
+
+<h3>Venus in Pisces</h3>
+<ul>
+  <li>Connects deeply with emotional and artistic expression.</li>
+  <li>Feels joy in music, dance, poetry, and anything sentimental.</li>
+  <li>Uses creativity to share love, compassion, and soulful insight.</li>
+</ul>
+  </div>
+</div>
+
+
+    <script>
+        const marstitle = document.getElementById("mar");
+        const mar = document.getElementById("mars");
+        const marov = document.getElementById("marsoverview");
+        const marovp = document.getElementById("marovp");
+        const marovp2 = document.getElementById("marovp2");
+        const marsff = document.getElementById("marsff");
+        const marsfflist = document.getElementById("marsfflist");
+        const marssy = document.getElementById("marssy");
+        const marsmi = document.getElementById("marsmi");
+        const marsex = document.getElementById("marsex");
+        const marsge = document.getElementById("marsge");
+        const marsmission = document.getElementById("marsmissions");
+        const marsimg = document.getElementById("marsimg");
+        const marsymbol = document.getElementById("marsymbol");
+        const merex = document.getElementById("merex");
+merex.style.display = "none";
+
+const merge = document.getElementById("merge");
+merge.style.display = "none";
+        marsymbol.style.display = "none";
+        marsmission.style.display = "none";
+        marsge.style.display = "none";
+        marsimg.style.display = "none";
+        marsex.style.display = "none";
+        marsmi.style.display = "none";
+        marssy.style.display = "none";
+        marsff.style.display = "none";
+        marsfflist.style.display = "none";
+        marov.style.display = "none";
+        marovp.style.display = "none";
+        marovp2.style.display = "none";
+
+    const mertitle = document.getElementById("mer");
+    const mer = document.getElementById("mercury");
+    const mercurybuttons = document.getElementById("mercurybuttons");
+    const merov = document.getElementById("merov");
+    const merovep = document.getElementById("merovep");
+    const merff = document.getElementById("merff");
+    const merfflist = document.getElementById("merfflist");
+    const mermi = document.getElementById("mermi");
+    const mercmission = document.getElementById("mercmission");
+    const mercurysymbol = document.getElementById("mercurysymbol");
+    const mersy = document.getElementById("mersy");
+    mercurysymbol.style.display = "none";
+    mermi.style.display = "none";
+    merfflist.style.display = "none";
+    merff.style.display = "none";
+    merovep.style.display = "none";
+    merov.style.display = "none";
+    mercurybuttons.style.display = "none";
+    mercmission.style.display = "none";
+    let mercuryZoomed = false;
+    let merovZoomed = false;
+    let merffZoomed = false;
+    let mermiZoomed = false;
+    let mersyZoomed = false;
+
+        const ventitle = document.getElementById("ven");
+        const ven = document.getElementById("venus");
+        const venusbuttons = document.getElementById("venusbuttons");
+        const venusov = document.getElementById("venusoverview");
+        const venusovep = document.getElementById("venusovep");
+        const venusff = document.getElementById("venusff");
+        const venusfflist = document.getElementById("venusfflist");
+        const venusmi = document.getElementById("venusmi");
+        const venussy = document.getElementById("venussy");
+        const venusge = document.getElementById("venusge");
+        const venusex = document.getElementById("venusex");
+        const venusmiss = document.getElementById("venusmission");
+        const venusimg = document.getElementById("venusimg");
+        const venussym = document.getElementById("venussymbol");
+        venusex.style.display = "none";
+        venussym.style.display = "none";
+        venusimg.style.display = "none";
+        venusmiss.style.display = "none";
+        venusge.style.display = "none";
+        venussy.style.display = "none";
+        venusmi.style.display = "none";
+        venusfflist.style.display = "none";
+        venusff.style.display = "none";
+        venusbuttons.style.display = "none";
+        venusovep.style.display = "none";
+        let venusZoomed = false;
+        let venovZoomed = false;
+        let venusffZoomed = false;
+        let venusmiZoomed = false;
+        let venussyZoomed = false;
+        let venusgeZoomed = false;
+        let venusexZoomed = false;
+
+        const eartitle = document.getElementById("ear");
+        const ear = document.getElementById("earth");
+
+        const juptitle = document.getElementById("jup");
+        const jup = document.getElementById("jupiter");
+
+        const sattitle = document.getElementById("sat");
+        const sat = document.getElementById("saturn");
+        const saturnbuttons = document.getElementById("saturnbuttons");
+        const satov = document.getElementById("satov");
+        const satovep = document.getElementById("satovep");
+        const satff = document.getElementById("satff");
+        const satfflist = document.getElementById("satfflist");
+        const satmi = document.getElementById("satmi");
+        const satmiss = document.getElementById("satmiss");
+        const satsy = document.getElementById("satsy");
+        const satge = document.getElementById("satge");
+        const satex = document.getElementById("satex");
+        const satsyss = document.getElementById("satsyss");
+        satsyss.style.display = "none";
+        satge.style.display = "none";
+        satex.style.display = "none";
+        satsy.style.display = "none";
+        satmi.style.display = "none";
+        satmiss.style.display = "none";
+        satfflist.style.display = "none";
+        satff.style.display = "none";
+        satovep.style.display = "none";
+        satov.style.display = "none";
+        saturnbuttons.style.display = "none";
+        let saturnZoomed = false;
+        let satovZoomed = false;
+        let satffZoomed = false;
+        let satmiZoomed = false;
+        let satsyZoomed = false;
+
+        const uratitle = document.getElementById("ura");
+        const ura = document.getElementById("uranus");
+        const uranusbuttons = document.getElementById("uranusbuttons");
+        const uraov = document.getElementById("uraov");
+        const uraovep = document.getElementById("uraovep");
+        const uraff = document.getElementById("uraff");
+        const urafflist = document.getElementById("urafflist");
+        const uranusmissions = document.getElementById("uranusmissions");
+        const urasy = document.getElementById("urasy");
+        const urasym = document.getElementById("urasym");
+        const urage = document.getElementById("urage");
+        const uraex = document.getElementById("uraex");
+        urage.style.display = "none";
+        uraex.style.display = "none";
+        urasym.style.display = "none";
+        urasy.style.display = "none";
+        uranusmissions.style.display = "none";
+        const urami = document.getElementById("urami");
+        urami.style.display = "none";
+        urafflist.style.display = "none";
+        uraff.style.display = "none";
+        uraovep.style.display = "none";
+        uraov.style.display = "none";
+        uranusbuttons.style.display = "none";
+        let uranusZoomed = false;
+        let uraovZoomed = false;
+        let uraffZoomed = false;
+        let uramiZoomed = false;
+        let urasyZoomed = false;
+
+
+
+
+
+
+
+
+        const neptitle = document.getElementById("nep");
+        const nep = document.getElementById("neptune");
+        const neptunebuttons = document.getElementById("neptunebuttons");
+        const nepov = document.getElementById("nepov");
+        const nepovep = document.getElementById("nepovep");
+        const nepff = document.getElementById("nepff");
+        const nepfflist = document.getElementById("nepfflist");
+        const nepmi = document.getElementById("nepmi");
+        const nepmilist = document.getElementById("nepmilist");
+        const nepsy = document.getElementById("nepsy");
+        const nepsym = document.getElementById("nepsym");
+        const nepex = document.getElementById("nepex");
+        nepex.style.display = "none";
+        const nepge = document.getElementById("nepge");
+        nepge.style.display = "none";
+        nepsym.style.display = "none";
+        nepsy.style.display = "none";
+        nepmilist.style.display = "none";
+        nepmi.style.display = "none";
+        nepfflist.style.display = "none";
+        nepff.style.display = "none";
+        nepovep.style.display = "none";
+        neptunebuttons.style.display = "none";
+        nepov.style.display = "none";       
+        let neptuneZoomed = false;
+        let nepovZoomed = false;
+        let nepffZoomed = false;
+        let nepmiZoomed = false;
+        let nepsyZoomed = false;
+
+        const suntitle = document.getElementById("sun2");
+        const sun = document.getElementById("sunn");
+
+        let marsZoomed = false;
+        let marovZoomed = false;
+        let marsffZoomed = false;
+        let marssyZoomed = false;
+        let marsmiZoomed = false;
+        let marsexZoomed = false;
+        let marsgeZoomed = false;
+
+        sun.addEventListener("mouseenter", () => {
+           suntitle.style.animation = "FadeIn 0.5s ease forwards";
+        });
+
+        sun.addEventListener("mouseleave", () => {
+           suntitle.style.animation = "FadeOut 1.5s ease forwards";
+        });
+
+        nep.addEventListener("mouseenter", () => {
+           neptitle.style.animation = "FadeIn 0.5s ease forwards";
+        });
+
+        nep.addEventListener("mouseleave", () => {
+           neptitle.style.animation = "FadeOut 1.5s ease forwards";
+        });
+
+        ura.addEventListener("mouseenter", () => {
+           uratitle.style.animation = "FadeIn 0.5s ease forwards";
+        });
+
+        ura.addEventListener("mouseleave", () => {
+           uratitle.style.animation = "FadeOut 1.5s ease forwards";
+        });
+
+        sat.addEventListener("mouseenter", () => {
+           sattitle.style.animation = "FadeIn 0.5s ease forwards";
+        });
+
+        sat.addEventListener("mouseleave", () => {
+           sattitle.style.animation = "FadeOut 1.5s ease forwards";
+        });
+
+        jup.addEventListener("mouseenter", () => {
+           juptitle.style.animation = "FadeIn 0.5s ease forwards";
+        });
+
+        jup.addEventListener("mouseleave", () => {
+           juptitle.style.animation = "FadeOut 1.5s ease forwards";
+        });
+
+        ear.addEventListener("mouseenter", () => {
+           eartitle.style.animation = "FadeIn 0.5s ease forwards";
+        });
+
+        ear.addEventListener("mouseleave", () => {
+           eartitle.style.animation = "FadeOut 1.5s ease forwards";
+        });
+
+        ven.addEventListener("mouseenter", () => {
+           ventitle.style.animation = "FadeIn 0.5s ease forwards";
+        });
+
+        ven.addEventListener("mouseleave", () => {
+           ventitle.style.animation = "FadeOut 1.5s ease forwards";
+        });
+
+        mer.addEventListener("mouseenter", () => {
+           mertitle.style.animation = "FadeIn 0.5s ease forwards";
+        });
+
+        mer.addEventListener("mouseleave", () => {
+           mertitle.style.animation = "FadeOut 1.5s ease forwards";
+        });
+
+        mar.addEventListener("mouseenter", () => {
+           marstitle.style.animation = "FadeIn 0.5s ease forwards";
+        });
+
+        mar.addEventListener("mouseleave", () => {
+           marstitle.style.animation = "FadeOut 1.5s ease forwards";
+        });
+
+   function hideAllPlanetsExcept(exceptPlanet) {
+  const planets = [mar, ven, ear, mer, jup, sat, ura, nep, sun];
+  planets.forEach(p => {
+    if (p !== exceptPlanet) {
+      p.style.display = "none";
+    }
+  });
+}
+
+function hideAllMarsButton(except) {
+   const buttons = [marsmi, marsff, marov, marsge, marssy, marsex];
+   buttons.forEach(p => {
+      if (p !== except) {
+         p.style.display = "none";
+      }
+   })
+}
+
+function hideAllVenusButton(except) {
+   const buttons = [venusmi, venusff, venusov, venusge, venussy, venusex];
+   buttons.forEach(p => {
+      if (p !== except) {
+         p.style.display = "none";
+      }
+   })
+}
+
+function showAllVenusButton() {
+   const buttons = [venusmi, venusff, venusov, venusge, venussy, venusex];
+   buttons.forEach(p => {
+      p.style.display = "block";
+    p.style.animation = "none";
+    void p.offsetWidth;
+    p.style.animation = "FadeIn 1s ease forwards";
+   })
+}
+
+function hideAllMercuryButton(except) {
+   const buttons = [mermi, merff, mersy, merex, merge, merov];
+   buttons.forEach(p => {
+      if (p !== except) {
+         p.style.display = "none";
+      }
+   })
+}
+
+function showAllMercuryButton() {
+   const buttons = [mermi, merff, mersy, merex, merge, merov];
+   buttons.forEach(p => {
+      p.style.display = "block";
+      p.style.animation = "none";
+      void p.offsetWidth;
+      p.style.animation = "FadeIn 1s ease forwards";
+   })
+}
+
+function hideAllNeptuneButton(except) {
+   const buttons = [nepmi, nepff, nepsy, nepex, nepge, nepov];
+   buttons.forEach(p => {
+      if (p !== except) {
+         p.style.display = "none";
+      }
+   })
+}
+
+function showAllNeptuneButton() {
+   const buttons = [nepmi, nepff, nepsy, nepex, nepge, nepov];
+   buttons.forEach(p => {
+      p.style.display = "block";
+      p.style.animation = "none";
+      void p.offsetWidth;
+      p.style.animation = "FadeIn 1s ease forwards";
+   })
+}
+
+function hideAllSaturnButton(except) {
+   const buttons = [satmi, satff, satsy, satex, satge, satov];
+   buttons.forEach(p => {
+      if (p !== except) {
+         p.style.display = "none";
+      }
+   });
+}
+
+function showAllSaturnButton() {
+   const buttons = [satmi, satff, satsy, satex, satge, satov];
+   buttons.forEach(p => {
+      p.style.display = "block";
+      p.style.animation = "none";
+      void p.offsetWidth;
+      p.style.animation = "FadeIn 1s ease forwards";
+   });
+}
+
+function hideAllUranusButton(except) {
+   const buttons = [urami, uraff, urasy, uraex, urage, uraov];
+   buttons.forEach(p => {
+      if (p !== except) {
+         p.style.display = "none";
+      }
+   });
+}
+
+function showAllUranusButton() {
+   const buttons = [urami, uraff, urasy, uraex, urage, uraov];
+   buttons.forEach(p => {
+      p.style.display = "block";
+      p.style.animation = "none";
+      void p.offsetWidth;
+      p.style.animation = "FadeIn 1s ease forwards";
+   });
+}
+
+
+function showAllPlanets() {
+  const planets = [mar, ven, ear, mer, jup, sat, ura, nep, sun];
+  planets.forEach(p => {
+    p.style.display = "block";
+    p.style.animation = "none";
+    void p.offsetWidth;
+    p.style.animation = "FadeIn 1s ease forwards";
+  });
+
+}
+
+function showAllMarsButtons() {
+  const planets = [marsmi, marsff, marov, marsge, marssy, marsex];
+  planets.forEach(p => {
+    p.style.display = "block";
+    p.style.animation = "none";
+    void p.offsetWidth;
+    p.style.animation = "FadeIn 1s ease forwards";
+  });
+
+}
+
+function HideAllInfo() {
+   const info = [marsmission, marsfflist, marovp, marovp2, marsymbol, marsimg, venusimg, venusfflist, venusmiss, venussym, venusovep, merfflist, mercmission, mercurysymbol, merovep, nepovep, nepfflist, nepsym, nepmilist, satfflist, satsyss, satovep, satmiss, uranusmissions, urasym, urafflist, uraovep];
+   info.forEach(p => {
+    p.style.display = "none";
+   });
+}
+
+function HideAllMarsButtons() {
+  const planets = [marsmi, marsff, marov, marsge, marssy, marsex];
+  planets.forEach(p => {
+    p.style.display = "none";
+    p.style.animation = "none";
+    void p.offsetWidth;
+    p.style.animation = "FadeOut 1s ease forwards";
+  });
+
+}
+
+function Fade(Planet) {
+   console.log("Fading in", Planet.id);
+  Planet.style.opacity = "0";
+  Planet.style.display = "block";
+  Planet.style.animation = "FadeIn 1s ease forwards";
+}
+
+function FadeOut(Planet) {
+   Planet.style.opacity = "0";
+   Planet.style.animation = "FadeOut 1s ease forwards";
+   Planet.style.display = "none";
+}
+
+
+        mar.addEventListener("click", () => {
+         if (!marsZoomed) {
+   
+        marsZoomed = true;
+            marstitle.style.display = "none";
+            hideAllPlanetsExcept(mar);
+
+            Fade(marsmi);
+            Fade(marssy);
+            Fade(marsff);
+            Fade(marov);
+            Fade(marsex);
+            Fade(marsge);
+
+            mar.style.position = "absolute";
+            mar.style.display = "block"; 
+            mar.style.opacity = "1"; 
+            mar.style.animation = "none";
+            void mar.offsetWidth;
+            mar.style.transformOrigin = "center center";
+            mar.style.zIndex = "1000";
+            mar.style.animation = "marsmove 1.5s ease forwards";
+         }  else {
+
+       mar.style.animation = "revmarsmove 1.5s ease forwards";
+       HideAllMarsButtons();
+       HideAllInfo();
+
+    setTimeout(() => {
+      showAllPlanets();
+      marstitle.style.display = "block";
+      mar.style.animation = "none";
+      marsZoomed = false;
+    }, 1500);
+  }
+});
+
+
+
+
+ ven.addEventListener("click", () => {
+         if (!venusZoomed) {
+            venusZoomed = true;
+            ventitle.style.display = "none";
+            hideAllPlanetsExcept(ven);
+            Fade(venusbuttons);
+            Fade(venusff);
+            Fade(venusmi);
+            Fade(venussy);
+            Fade(venusge);
+            Fade(venusex);
+
+            ven.style.position = "absolute";
+            ven.style.display = "block"; 
+            ven.style.opacity = "1"; 
+            ven.style.animation = "none";
+            void ven.offsetWidth;
+            ven.style.transformOrigin = "center center";
+            ven.style.zIndex = "1000";
+            ven.style.animation = "venmove 1.5s ease forwards";
+         }  else {
+        ven.style.animation = "revvenmove 1.5s ease forwards";
+        FadeOut(venusbuttons);
+        HideAllInfo();
+
+
+
+      setTimeout(() => {
+         showAllPlanets();
+      ventitle.style.display = "block";
+      ven.style.animation = "none";
+      venusZoomed = false;
+    }, 1500);
+  }
+});
+
+
+mer.addEventListener("click", () => {
+         if (!mercuryZoomed) {
+            mercuryZoomed = true;
+            mertitle.style.display = "none";
+            hideAllPlanetsExcept(mer);
+            Fade(mercurybuttons);
+            Fade(merov);
+            Fade(merff);
+            Fade(mermi);
+            Fade(merge);
+            Fade(merex);
+
+            mer.style.position = "absolute";
+            mer.style.display = "block"; 
+            mer.style.opacity = "1"; 
+            mer.style.animation = "none";
+            void mer.offsetWidth;
+            mer.style.transformOrigin = "center center";
+            mer.style.zIndex = "1000";
+            mer.style.animation = "mermove 1.5s ease forwards";
+         }  else {
+        mer.style.animation = "revmermove 1.5s ease forwards";
+        FadeOut(mercurybuttons);
+        HideAllInfo();
+
+
+
+      setTimeout(() => {
+         showAllPlanets();
+      mertitle.style.display = "block";
+      mer.style.animation = "none";
+      mercuryZoomed = false;
+    }, 1500);
+  }
+});
+
+nep.addEventListener("click", () => {
+         if (!neptuneZoomed) {
+            neptuneZoomed = true;
+            neptitle.style.display = "none";
+            hideAllPlanetsExcept(nep);
+            
+            Fade(nepov);
+            Fade(nepff);
+            Fade(nepmi);
+            Fade(nepsy);
+            Fade(nepge);
+            Fade(nepex);
+
+            nep.style.position = "absolute";
+           nep.style.display = "block"; 
+           nep.style.opacity = "1"; 
+           nep.style.animation = "none";
+            void nep.offsetWidth;
+           nep.style.transformOrigin = "center center";
+          nep.style.zIndex = "1000";
+           nep.style.animation = "nepmove 1.5s ease forwards";
+           Fade(neptunebuttons);
+         }  else {
+        nep.style.animation = "revnepmove 1.5s ease forwards";
+        FadeOut(neptunebuttons);
+        HideAllInfo();
+
+
+
+      setTimeout(() => {
+         showAllPlanets();
+      neptitle.style.display = "block";
+      nep.style.animation = "none";
+      neptuneZoomed = false;
+    }, 1500);
+  }
+});
+
+
+sat.addEventListener("click", () => {
+   if (!saturnZoomed) {
+      saturnZoomed = true;
+      sattitle.style.display = "none";
+      hideAllPlanetsExcept(sat);
+
+      Fade(satov);
+      Fade(satff);
+      Fade(satmi);
+      Fade(satsy);
+      Fade(satge);
+      Fade(satex);
+
+      sat.style.position = "absolute";
+      sat.style.display = "block"; 
+      sat.style.opacity = "1"; 
+      sat.style.animation = "none";
+      void sat.offsetWidth;
+      sat.style.transformOrigin = "center center";
+      sat.style.zIndex = "1000";
+      sat.style.animation = "satmove 1.5s ease forwards";
+      Fade(saturnbuttons);
+   } else {
+      sat.style.animation = "revsatmove 1.5s ease forwards";
+      FadeOut(saturnbuttons);
+      HideAllInfo();
+
+      setTimeout(() => {
+         showAllPlanets();
+         sattitle.style.display = "block";
+         sat.style.animation = "none";
+         saturnZoomed = false;
+      }, 1500);
+   }
+});
+
+ura.addEventListener("click", () => {
+   if (!uranusZoomed) {
+      uranusZoomed = true;
+      uratitle.style.display = "none";
+      hideAllPlanetsExcept(ura);
+
+      Fade(uraov);
+      Fade(uraff);
+      Fade(urami);
+      Fade(urasy);
+      Fade(urage);
+      Fade(uraex);
+
+      ura.style.position = "absolute";
+      ura.style.display = "block"; 
+      ura.style.opacity = "1"; 
+      ura.style.animation = "none";
+      void ura.offsetWidth;
+      ura.style.transformOrigin = "center center";
+      ura.style.zIndex = "1000";
+      ura.style.animation = "uramove 1.5s ease forwards";
+      Fade(uranusbuttons);
+   } else {
+      ura.style.animation = "revuramove 1.5s ease forwards";
+      FadeOut(uranusbuttons);
+      HideAllInfo();
+
+      setTimeout(() => {
+         showAllPlanets();
+         uratitle.style.display = "block";
+         ura.style.animation = "none";
+         uranusZoomed = false;
+      }, 1500);
+   }
+});
+
+
+sun.addEventListener("click", () => {
+   window.alert("WORK IN PROGRESS");
+});
+
+
+ear.addEventListener("click", () => {
+   window.alert("WORK IN PROGRESS");
+});
+
+jup.addEventListener("click", () => {
+   window.alert("WORK IN PROGRESS");
+});
+
+
+marov.addEventListener("click", () => {
+   if(!marovZoomed) {
+
+   marovZoomed = true;
+   marov.style.animation = "none";
+   void marov.offsetWidth;
+   marov.style.animation = "marovmove 1s ease forwards";
+   hideAllMarsButton(marov);
+
+   setTimeout (() => {
+   Fade(marovp);
+   Fade(marovp2);
+   }, 600);
+ 
+} else {
+   FadeOut(marovp);
+   FadeOut(marovp2);
+   showAllMarsButtons();
+
+   marov.style.animation = "none";
+   void marov.offsetWidth;
+   marov.style.animation = "revmarovmove 1s ease forwards";
+   marovZoomed = false;
+}
+
+});
+
+marsff.addEventListener("click", () => {
+   if(!marsffZoomed) {
+
+      hideAllMarsButton(marsff);
+
+   marsffZoomed = true;
+   marsff.style.animation = "none";
+   void marsff.offsetWidth;
+   marsff.style.animation = "marffmove 1s ease forwards";
+
+
+   setTimeout (() => {
+  Fade(marsfflist);
+   }, 600);
+ 
+} else {
+   FadeOut(marsfflist);
+   showAllMarsButtons();
+
+   marsff.style.animation = "none";
+   void marsff.offsetWidth;
+  marsff.style.animation = "revmarffmove 1s ease forwards";
+   marsffZoomed = false;
+}
+
+});
+
+marssy.addEventListener("click", () => {
+   if(!marssyZoomed) {
+   hideAllMarsButton(marssy);
+   marssyZoomed = true;
+   marssy.style.animation = "none";
+   void marssy.offsetWidth;
+   marssy.style.animation = "marssymove 1s ease forwards";
+
+   setTimeout (() => {
+  Fade(marsymbol);
+   }, 600);
+ 
+} else {
+   FadeOut(marsymbol);
+   showAllMarsButtons();
+
+   marssy.style.animation = "none";
+   void marssy.offsetWidth;
+  marssy.style.animation = "revmarssymove 1s ease forwards";
+   marssyZoomed = false;
+}
+
+});
+
+marsmi.addEventListener("click", () => {
+   if(!marsmiZoomed) {
+   hideAllMarsButton(marsmi);
+   marsmi.style.zIndex = "9999";
+   marsmiZoomed = true;
+   marsmi.style.animation = "none";
+   void marsmi.offsetWidth;
+   marsmi.style.animation = "marsmimove 1s ease forwards";
+
+   setTimeout (() => {
+  Fade(marsmission);
+   }, 600);
+ 
+} else {
+   FadeOut(marsmission);
+  showAllMarsButtons();
+   marsmi.style.animation = "none";
+   void marsmi.offsetWidth;
+  marsmi.style.animation = "revmarsmimove 1s ease forwards";
+
+   marsmiZoomed = false;
+}
+
+});
+
+marsex.addEventListener("click", () => {
+   window.alert("WORK IN PROGRESS");
+});
+
+marsge.addEventListener("click", () => {
+    if(!marsgeZoomed) {
+  hideAllMarsButton(marsge);
+  marsgeZoomed = true;
+  marsge.style.animation = "none";
+   void marsge.offsetWidth;
+   marsge.style.animation = "marsgemove 1s ease forwards";
+
+   setTimeout (() => {
+   Fade(marsimg);
+   }, 600);
+ 
+} else {
+   FadeOut(marsimg);
+   showAllMarsButtons();
+   marsge.style.animation = "none";
+   void marsge.offsetWidth;
+  marsge.style.animation = "revmarsgemove 1s ease forwards";
+
+   marsgeZoomed = false;
+}
+
+});
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+venusov.addEventListener("click", () => {
+    if(!venovZoomed) {
+  venovZoomed = true;
+  venusov.style.animation = "none";
+   void venusov.offsetWidth;
+   venusov.style.animation = "marovmove 1s ease forwards";
+   hideAllVenusButton(venusov);
+
+   setTimeout (() => {
+      Fade(venusovep);
+   }, 600);
+ 
+} else {
+   showAllVenusButton();
+   FadeOut(venusovep);
+   venusov.style.animation = "none";
+   void marsge.offsetWidth;
+  venusov.style.animation = "revmarovmove 1s ease forwards";
+
+   venovZoomed = false;
+}
+
+});
+
+venusff.addEventListener("click", () => {
+   if(!venusffZoomed) {
+
+
+   venusffZoomed = true;
+   venusff.style.animation = "none";
+   void venusff.offsetWidth;
+   venusff.style.animation = "marffmove 1s ease forwards";
+  hideAllVenusButton(venusff);
+
+   setTimeout (() => {
+  Fade(venusfflist);
+   }, 600);
+ 
+} else {
+   FadeOut(venusfflist);
+   showAllVenusButton();
+
+   venusff.style.animation = "none";
+   void venusff.offsetWidth;
+  venusff.style.animation = "revmarffmove 1s ease forwards";
+   venusffZoomed = false;
+}
+
+});
+
+venusmi.addEventListener("click", () => {
+   if(!venusmiZoomed) {
+
+
+   venusmiZoomed = true;
+   venusmi.style.animation = "none";
+   void venusmi.offsetWidth;
+   venusmi.style.animation = "marsmimove 1s ease forwards";
+   hideAllVenusButton(venusmi);
+
+
+   setTimeout (() => {
+  Fade(venusmiss);
+   }, 600);
+ 
+} else {
+   FadeOut(venusmiss);
+   showAllVenusButton();
+
+   venusmi.style.animation = "none";
+   void venusmi.offsetWidth;
+  venusmi.style.animation = "revmarsmimove 1s ease forwards";
+   venusmiZoomed = false;
+}
+
+});
+
+venussy.addEventListener("click", () => {
+   if(!venussyZoomed) {
+   hideAllMarsButton(marssy);
+   venussyZoomed = true;
+   venussy.style.animation = "none";
+   void venussy.offsetWidth;
+   venussy.style.animation = "marssymove 1s ease forwards";
+   hideAllVenusButton(venussy);
+
+   setTimeout (() => {
+  Fade(venussym);
+   }, 600);
+ 
+} else {
+   FadeOut(venussym);
+   showAllVenusButton();
+
+   venussy.style.animation = "none";
+   void venussy.offsetWidth;
+  venussy.style.animation = "revmarssymove 1s ease forwards";
+   venussyZoomed = false;
+}
+
+});
+
+venusge.addEventListener("click", () => {
+    if(!venusgeZoomed) {
+        venusgeZoomed = true;
+        venusge.style.animation = "none";
+        void venusge.offsetWidth;
+        venusge.style.animation = "marsgemove 1s ease forwards";
+        hideAllVenusButton(venusge);
+
+        setTimeout(() => {
+            Fade(venusimg);
+        }, 600);
+
+    } else {
+      showAllVenusButton();
+        FadeOut(venusimg);
+        venusge.style.animation = "none";
+        void venusge.offsetWidth;
+        venusge.style.animation = "revmarsgemove 1s ease forwards";
+
+        venusgeZoomed = false;
+    }
+});
+
+venusex.addEventListener("click", () => {
+   window.alert("WORK IN PROGRESS");
+});
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+merov.addEventListener("click", () => {
+    if(!merovZoomed) {
+        merovZoomed = true;
+        merov.style.animation = "none";
+        void merov.offsetWidth;
+        merov.style.animation = "marovmove 1s ease forwards";
+        hideAllMercuryButton(merov);
+
+        setTimeout(() => {
+            Fade(merovep);
+        }, 600);
+
+    } else {
+      showAllMercuryButton();
+        FadeOut(merovep);
+        merov.style.animation = "none";
+        void merov.offsetWidth;
+        merov.style.animation = "revmarovmove 1s ease forwards";
+
+        merovZoomed = false;
+    }
+});
+
+merff.addEventListener("click", () => {
+    if (!merffZoomed) {
+        merffZoomed = true;
+        merff.style.animation = "none";
+        void merff.offsetWidth;
+        merff.style.animation = "marffmove 1s ease forwards";
+        hideAllMercuryButton(merff);
+
+        setTimeout(() => {
+           Fade(merfflist);
+        }, 600);
+
+    } else {
+        showAllMercuryButton();
+        FadeOut(merfflist);
+        merff.style.animation = "none";
+        void merff.offsetWidth;
+        merff.style.animation = "revmarffmove 1s ease forwards";
+
+        merffZoomed = false;
+    }
+});
+
+mermi.addEventListener("click", () => {
+    if (!mermiZoomed) {
+        mermiZoomed = true;
+        mermi.style.animation = "none";
+        void mermi.offsetWidth;
+        mermi.style.animation = "marsmimove 1s ease forwards";
+        hideAllMercuryButton(mermi);
+
+        setTimeout(() => {
+            Fade(mercmission);
+        }, 600);
+
+    } else {
+        showAllMercuryButton();
+        FadeOut(mercmission);
+        mermi.style.animation = "none";
+        void mermi.offsetWidth;
+        mermi.style.animation = "revmarsmimove 1s ease forwards";
+
+        mermiZoomed = false;
+    }
+});
+
+mersy.addEventListener("click", () => {
+    if (!mersyZoomed) {
+        mersyZoomed = true;
+        mersy.style.animation = "none";
+        void mersy.offsetWidth;
+        mersy.style.animation = "marssymove 1s ease forwards";
+        hideAllMercuryButton(mersy);
+
+        setTimeout(() => {
+            Fade(mercurysymbol);
+        }, 600);
+
+    } else {
+        showAllMercuryButton();
+        FadeOut(mercurysymbol);
+        mersy.style.animation = "none";
+        void mersy.offsetWidth;
+        mersy.style.animation = "revmarssymove 1s ease forwards";
+
+        mersyZoomed = false;
+    }
+});
+
+merge.addEventListener("click", () => {
+   window.alert("WORK IN PROGRESS");
+});
+
+merex.addEventListener("click", () => {
+   window.alert("WORK IN PROGRESS");
+});
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+nepov.addEventListener("click", () => {
+    if (!nepovZoomed) {
+        nepovZoomed = true;
+        nepov.style.animation = "none";
+        void nepov.offsetWidth;
+        nepov.style.animation = "marovmove 1s ease forwards";
+        hideAllNeptuneButton(nepov);
+
+        setTimeout(() => {
+            Fade(nepovep);
+        }, 600);
+
+    } else {
+        showAllNeptuneButton();
+        FadeOut(nepovep);
+        nepov.style.animation = "none";
+        void nepov.offsetWidth;
+        nepov.style.animation = "revmarovmove 1s ease forwards";
+
+        nepovZoomed = false;
+    }
+});
+
+nepff.addEventListener("click", () => {
+    if (!nepffZoomed) {
+        nepffZoomed = true;
+        nepff.style.animation = "none";
+        void nepff.offsetWidth;
+        nepff.style.animation = "marffmove 1s ease forwards";
+        hideAllNeptuneButton(nepff);
+
+        setTimeout(() => {
+            Fade(nepfflist);
+        }, 600);
+
+    } else {
+        showAllNeptuneButton();
+        FadeOut(nepfflist);
+        nepff.style.animation = "none";
+        void nepff.offsetWidth;
+        nepff.style.animation = "revmarffmove 1s ease forwards";
+
+        nepffZoomed = false;
+    }
+});
+
+nepmi.addEventListener("click", () => {
+    if (!nepmiZoomed) {
+        nepmiZoomed = true;
+        nepmi.style.animation = "none";
+        void nepmi.offsetWidth;
+        nepmi.style.animation = "marsmimove 1s ease forwards";
+        hideAllNeptuneButton(nepmi);
+
+        setTimeout(() => {
+            Fade(nepmilist);
+        }, 600);
+
+    } else {
+        showAllNeptuneButton();
+        FadeOut(nepmilist);
+        nepmi.style.animation = "none";
+        void nepmi.offsetWidth;
+        nepmi.style.animation = "revmarsmimove 1s ease forwards";
+
+        nepmiZoomed = false;
+    }
+});
+
+nepsy.addEventListener("click", () => {
+    if (!nepsyZoomed) {
+        nepsyZoomed = true;
+        nepsy.style.animation = "none";
+        void nepsy.offsetWidth;
+        nepsy.style.animation = "marssymove 1s ease forwards";
+        hideAllNeptuneButton(nepsy);
+
+        setTimeout(() => {
+            Fade(nepsym);
+        }, 600);
+
+    } else {
+        showAllNeptuneButton();
+        FadeOut(nepsym);
+        nepsy.style.animation = "none";
+        void nepsy.offsetWidth;
+        nepsy.style.animation = "revmarssymove 1s ease forwards";
+
+        nepsyZoomed = false;
+    }
+});
+
+nepge.addEventListener("click", () => {
+   window.alert("WORK IN PROGRESS");
+});
+
+nepex.addEventListener("click", () => {
+   window.alert("WORK IN PROGRESS");
+});
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+satov.addEventListener("click", () => {
+    if (!satovZoomed) {
+        satovZoomed = true;
+        satov.style.animation = "none";
+        void satov.offsetWidth;
+        satov.style.animation = "marovmove 1s ease forwards";
+        hideAllSaturnButton(satov);
+
+        setTimeout(() => {
+            Fade(satovep);
+        }, 600);
+
+    } else {
+        showAllSaturnButton();
+        FadeOut(satovep);
+        satov.style.animation = "none";
+        void satov.offsetWidth;
+        satov.style.animation = "revmarovmove 1s ease forwards";
+
+        satovZoomed = false;
+    }
+});
+
+
+
+satff.addEventListener("click", () => {
+
+    if (!satffZoomed) {
+        satffZoomed = true;
+        satff.style.animation = "none";
+        void satff.offsetWidth;
+        satff.style.animation = "marffmove 1s ease forwards";
+        hideAllSaturnButton(satff);
+
+        setTimeout(() => {
+            Fade(satfflist);
+        }, 600);
+
+    } else {
+        showAllSaturnButton();
+        FadeOut(satfflist);
+        satff.style.animation = "none";
+        void satff.offsetWidth;
+        satff.style.animation = "revmarffmove 1s ease forwards";
+
+        satffZoomed = false;
+    }
+});
+
+satmi.addEventListener("click", () => {
+   if (!satmiZoomed) {
+
+      satmiZoomed = true;
+      satmi.style.animation = "none";
+      void satmi.offsetWidth;
+      satmi.style.animation = "marsmimove 1s ease forwards";
+      hideAllSaturnButton(satmi);
+
+      setTimeout(() => {
+         Fade(satmiss);
+      }, 600);
+
+   } else {
+      FadeOut(satmiss);
+      showAllSaturnButton();
+
+      satmi.style.animation = "none";
+      void satmi.offsetWidth;
+      satmi.style.animation = "revmarsmimove 1s ease forwards";
+      satmiZoomed = false;
+   }
+});
+
+satsy.addEventListener("click", () => {
+   if (!satsyZoomed) {
+
+      satsyZoomed = true;
+      satsy.style.animation = "none";
+      void satsy.offsetWidth;
+      satsy.style.animation = "marssymove 1s ease forwards";
+      hideAllSaturnButton(satsy);
+
+      setTimeout(() => {
+         Fade(satsyss);
+      }, 600);
+
+   } else {
+      FadeOut(satsyss);
+      showAllSaturnButton();
+
+      satsy.style.animation = "none";
+      void satsy.offsetWidth;
+      satsy.style.animation = "revmarssymove 1s ease forwards";
+      satsyZoomed = false;
+   }
+});
+
+satge.addEventListener("click", () => {
+   window.alert("WORK IN PROGRESS");
+});
+
+satex.addEventListener("click", () => {
+   window.alert("WORK IN PROGRESS");
+});
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+uraov.addEventListener("click", () => {
+    if (!uraovZoomed) {
+        uraovZoomed = true;
+        uraov.style.animation = "none";
+        void uraov.offsetWidth;
+        uraov.style.animation = "marovmove 1s ease forwards";
+        hideAllUranusButton(uraov);
+
+        setTimeout(() => {
+            Fade(uraovep);
+        }, 600);
+
+    } else {
+        showAllUranusButton();
+        FadeOut(uraovep);
+        uraov.style.animation = "none";
+        void uraov.offsetWidth;
+        uraov.style.animation = "revmarovmove 1s ease forwards";
+
+        uraovZoomed = false;
+    }
+});
+
+uraff.addEventListener("click", () => {
+    if (!uraffZoomed) {
+        uraffZoomed = true;
+        uraff.style.animation = "none";
+        void uraff.offsetWidth;
+        uraff.style.animation = "marffmove 1s ease forwards";
+        hideAllUranusButton(uraff);
+
+        setTimeout(() => {
+            Fade(urafflist);
+        }, 600);
+
+    } else {
+        showAllUranusButton();
+        FadeOut(urafflist);
+        uraff.style.animation = "none";
+        void uraff.offsetWidth;
+        uraff.style.animation = "revmarffmove 1s ease forwards";
+
+        uraffZoomed = false;
+    }
+});
+
+urami.addEventListener("click", () => {
+    if (!uramiZoomed) {
+        uramiZoomed = true;
+        urami.style.animation = "none";
+        void urami.offsetWidth;
+        urami.style.animation = "marsmimove 1s ease forwards";
+        hideAllUranusButton(urami);
+
+        setTimeout(() => {
+            Fade(uranusmissions);
+        }, 600);
+
+    } else {
+        showAllUranusButton();
+        FadeOut(uranusmissions);
+        urami.style.animation = "none";
+        void urami.offsetWidth;
+        urami.style.animation = "revmarsmimove 1s ease forwards";
+
+        uramiZoomed = false;
+    }
+});
+
+urasy.addEventListener("click", () => {
+   if (!urasyZoomed) {
+
+      urasyZoomed = true;
+      urasy.style.animation = "none";
+      void urasy.offsetWidth;
+      urasy.style.animation = "marssymove 1s ease forwards";
+      hideAllUranusButton(urasy);
+
+      setTimeout(() => {
+         Fade(urasym);
+      }, 600);
+
+   } else {
+      FadeOut(urasym);
+      showAllUranusButton();
+
+      urasy.style.animation = "none";
+      void urasy.offsetWidth;
+      urasy.style.animation = "revmarssymove 1s ease forwards";
+      urasyZoomed = false;
+   }
+});
+
+urage.addEventListener("click", () => {
+   window.alert("WORK IN PROGRESS");
+});
+
+uraex.addEventListener("click", () => {
+   window.alert("WORK IN PROGRESS");
+});
+
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,12 @@
+<script>
+        const mar = document.getElementById("mars");
+        const marstitle = document.getElementById("mar");
+
+        mar.addEventListener("mouseenter", () => {
+           marstitle.textContent = "Mars"
+        });
+
+    </script>
+
+
+    <h1 style="color: white; z-index: 10;" id="mar"></h1>

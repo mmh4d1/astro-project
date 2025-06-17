@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ASTROPHYSICS</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body style="background-color: #000000;">
+    <div class="stars"></div>
+    <img src="ASTROOO.png" id="header">
+    <div class="button-container">
+        <button type="button" class="button" id="aura-button">Aurora Borealis</button>
+        <button type="button" class="button" id="slr-button">Solar system</button>
+        <button type="button" class="button" id="blk-button">Black holes</button>
+        <button type="button" class="button" id="comet-button">Comets </button>
+        <img src="COMET.webp" class="comet" id="comet-image">
+        <img src="COMET.webp" class="comet" id="comet-image2">
+        <img src="COMET.webp" class="comet" id="comet-image3">
+        <img src="COMET.webp" class="comet" id="comet-image4">
+        <img src="image-from-rawpixel-id-7194500-png.png" class="aura" id="aura">
+        <img src="planets-removebg-preview.png" id="sun">
+        <img src="blackholee.gif" id="blackholee">
+    </div>
+
+<script>
+  const cometBtn = document.getElementById("comet-button");
+  const auraBtn = document.getElementById("aura-button");
+  const slrBtn = document.getElementById("slr-button");
+  const blkBtn = document.getElementById("blk-button");
+  const cometImg = document.getElementById("comet-image");
+  const cometImg2 = document.getElementById("comet-image2");
+  const cometImg3 = document.getElementById("comet-image3");
+  const cometImg4 = document.getElementById("comet-image4");
+  const auraimg = document.getElementById("aura");
+  const sunimg = document.getElementById("sun");
+  const blkimg = document.getElementById("blackholee");
+  const ast = document.getElementById("header");
+
+  cometBtn.addEventListener("mouseenter", () => {
+    cometImg.style.animation = "none";   
+    cometImg.offsetHeight;
+    setTimeout(() => {              
+    cometImg.style.animation = "flyDiagonal 1.5s ease-out forwards";
+    }, 0);
+  });
+
+  cometBtn.addEventListener("mouseenter", () => {
+    cometImg2.style.animation = "none";   
+    cometImg2.offsetHeight;
+    setTimeout(() => {
+    cometImg2.style.animation = "flyDiagonal2 1.5s ease-out forwards";
+  }, 200);              
+  });
+
+  cometBtn.addEventListener("mouseenter", () => {
+    cometImg3.style.animation = "none";   
+    cometImg3.offsetHeight;
+    setTimeout(() => {
+    cometImg3.style.animation = "flyDiagonal3 1.5s ease-out forwards";
+  }, 500); 
+
+   cometBtn.addEventListener("mouseenter", () => {
+    cometImg4.style.animation = "none";   
+    cometImg4.offsetHeight;
+    setTimeout(() => {
+    cometImg4.style.animation = "flyDiagonal 1.5s ease-out forwards";
+  }, 600);
+  });  
+  });
+  auraBtn.addEventListener("mouseenter", () => {
+    auraimg.style.display = "block";
+    auraimg.style.animation = "none";
+    auraimg.offsetHeight;
+    auraimg.style.animation = "falling 1s ease forwards"; 
+  });
+
+  auraBtn.addEventListener("mouseleave", () => {
+  auraimg.style.display = "none";
+});
+
+ slrBtn.addEventListener("mouseenter", () => {
+  sunimg.style.animation = "none";
+  sunimg.style.display = 'block';
+  sunimg.offsetHeight;
+  sunimg.style.animation = "move 5s ease forwards";
+ }); 
+
+ blkBtn.addEventListener("mouseenter", () => {
+  blkimg.style.animation = "none";
+  blkimg.style.display = 'block';
+  blkimg.offsetHeight;
+  blkimg.style.animation = "rise 2s ease forwards";
+
+
+  setTimeout(() => {
+  ast.style.animation = "none";
+  ast.offsetHeight;
+  ast.style.animation = "absorbed 1s ease forwards";
+  }, 600);
+ });
+
+ blkBtn.addEventListener("mouseleave", () => {
+  blkimg.style.display = "none";
+
+
+  ast.style.animation = "none";
+  ast.style.opacity = 0;
+  ast.style.transform = "translateY(-430px)";
+  ast.offsetHeight;
+  ast.style.animation = "fallingimg 1s ease-out forwards";
+});
+
+slrBtn.onclick = function() {
+  window.location.href = "http://127.0.0.1:5500/planets.html";
+}
+
+blkBtn.addEventListener("click", () => {
+  window.alert("WORK IN PROGRESS");
+});
+
+cometBtn.addEventListener("click", () => {
+  window.alert("WORK IN PROGRESS");
+});
+
+auraBtn.addEventListener("click", () => {
+  window.alert("WORK IN PROGRESS");
+});
+
+
+  
+</script>
+
+    
+</body>
+</html>
