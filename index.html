@@ -14,14 +14,15 @@
         <button type="button" class="button" id="slr-button">Solar system</button>
         <button type="button" class="button" id="blk-button">Black holes</button>
         <button type="button" class="button" id="comet-button">Comets </button>
-        <img src="COMET.webp" class="comet" id="comet-image">
+    </div>
+
+    <img src="COMET.webp" class="comet" id="comet-image">
         <img src="COMET.webp" class="comet" id="comet-image2">
         <img src="COMET.webp" class="comet" id="comet-image3">
         <img src="COMET.webp" class="comet" id="comet-image4">
-        <img src="image-from-rawpixel-id-7194500-png (1).png" class="aura" id="aura">
-        <img src="planets-removebg-preview (1).png" id="sun">
+        <img src="image-from-rawpixel-id-7194500-png.png" class="aura" id="aura">
+        <img src="planets-removebg-preview.png" id="sun">
         <img src="blackholee.gif" id="blackholee">
-    </div>
 
 <script>
   const cometBtn = document.getElementById("comet-button");
@@ -36,6 +37,7 @@
   const sunimg = document.getElementById("sun");
   const blkimg = document.getElementById("blackholee");
   const ast = document.getElementById("header");
+  aura.style.display = "none";
 
   cometBtn.addEventListener("mouseenter", () => {
     cometImg.style.animation = "none";   
