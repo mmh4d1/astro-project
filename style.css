@@ -1028,7 +1028,7 @@ img {
 
 #mercury {
   position: absolute;
-  top: 420px;
+  top: 45vh;
   left: 19vw;           /* Use viewport width for horizontal positioning */
   width: 6vw;           /* Responsive width relative to viewport */
   max-width: 100px;     /* Cap the size at 100px */
