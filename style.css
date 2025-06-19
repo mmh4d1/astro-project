@@ -984,3 +984,23 @@ img {
     width: 90vw;
   }
 }
+
+@media (max-width: 768px) {
+  #header {
+    animation: fallingimg-sm 1s ease-out forwards;
+  }
+  
+  @keyframes fallingimg-sm {
+    0% {
+      transform: translate(-50%, -40vh);
+      opacity: 0;
+    }
+    20% {
+      opacity: 1;
+    }
+    100% {
+      transform: translate(-50%, 15vh); /* less gap on smaller */
+      opacity: 1;
+    }
+  }
+}
