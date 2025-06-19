@@ -995,7 +995,7 @@ img {
 #mer { top: 45vh; left: 17vw; font-size: 0.9rem; }
   #ven { top: 43vh; left: 25vw; font-size: 0.9rem; }
   #ear { top: 43vh; left: 33vw; font-size: 0.9rem; }
-  #mar { top: 45vh; left: 41vw; font-size: 0.9rem; }
+  #mar { top: 42vh; left: 41vw; font-size: 0.9rem; }
   #jup { top: 38vh; left: 53vw; font-size: 0.9rem; }
   #sat { top: 40vh; left: 66vw; font-size: 0.9rem; }
   #ura { top: 44vh; left: 78vw; font-size: 0.9rem; }
@@ -1132,7 +1132,6 @@ body, html {
 #mer {
   top: 39vh;
   left: 18.5vw;
-  font-size: 1rem;
 }
 
 #ven {
