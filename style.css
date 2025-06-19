@@ -1018,7 +1018,7 @@ img {
 
 #sunn {
   position: absolute;
-  top: 60px;
+  top: 60vh;
   left: -20vw;             /* relative horizontal position */
   width: 40vw;             /* relative width */
   max-width: 750px;        /* max width like before */
