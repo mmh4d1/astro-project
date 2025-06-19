@@ -1025,3 +1025,13 @@ img {
   min-width: 300px;        /* prevent shrinking too much */
   z-index: 1;              /* layer if needed */
 }
+
+#mercury {
+  position: absolute;
+  top: 420px;
+  left: 19vw;           /* Use viewport width for horizontal positioning */
+  width: 6vw;           /* Responsive width relative to viewport */
+  max-width: 100px;     /* Cap the size at 100px */
+  min-width: 50px;      /* Minimum size so it doesn't get too small */
+  z-index: 2;           /* Layer above sun if needed */
+}
