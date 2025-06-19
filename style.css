@@ -1097,3 +1097,64 @@ body, html {
   left: 90.5vw;
   z-index: 1;
 }
+
+#sun2,
+#mer,
+#ven,
+#ear,
+#mar,
+#jup,
+#sat,
+#ura,
+#nep {
+  color: white;
+  z-index: 10;
+  position: absolute;
+  opacity: 0;
+}
+
+/* Individual positions */
+#sun2 {
+  top: 2vh;
+  left: 5vw;
+}
+
+#mer {
+  top: 39vh;
+  left: 18.5vw;
+}
+
+#ven {
+  top: 33vh;
+  left: 26.6vw;
+}
+
+#ear {
+  top: 33vh;
+  left: 36.3vw;
+}
+
+#mar {
+  top: 37vh;
+  left: 44.5vw;
+}
+
+#jup {
+  top: 27vh;
+  left: 55vw;
+}
+
+#sat {
+  top: 28vh;
+  left: 69vw;
+}
+
+#ura {
+  top: 33vh;
+  left: 82.4vw;
+}
+
+#nep {
+  top: 33vh;
+  left: 92vw;
+}
