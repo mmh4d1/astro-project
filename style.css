@@ -991,6 +991,16 @@ img {
 }
 
 @media (max-width: 768px) {
+
+ #mer { top: 52vh; left: 18vw; font-size: 1rem; }
+  #ven { top: 50vh; left: 25vw; font-size: 1rem; }
+  #ear { top: 48vh; left: 34vw; font-size: 1rem; }
+  #mar { top: 52vh; left: 43vw; font-size: 1rem; }
+  #jup { top: 44vh; left: 54vw; font-size: 1rem; }
+  #sat { top: 47vh; left: 68vw; font-size: 1rem; }
+  #ura { top: 50vh; left: 80vw; font-size: 1rem; }
+  #nep { top: 50vh; left: 90vw; font-size: 1rem; }
+  
   #header {
     animation: fallingimg-sm 1s ease-out forwards;
   }
