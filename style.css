@@ -1046,7 +1046,7 @@ body, html {
   width: 8vw;         
   position: absolute;
   top: 41vh;                    
-  left: 25vw;                  
+  left: 24.8vw;                  
   z-index: 1;
 }
 
@@ -1054,46 +1054,46 @@ body, html {
   width: 9vw;         
   position: absolute;
   top: 40vh;                    
-  left: 33.5vw;                  
+  left: 33.8vw;                  
   z-index: 1;
 }
 
 #mars {
   width: 6vw;
   position: absolute;
-  top: 54vh;
-  left: 44vw;
+  top: 44.5vh;
+  left: 43.3vw;
   z-index: 1;
 }
 
 #jupiter {
   width: 13vw;
   position: absolute;
-  top: 47vh;
-  left: 53vw;
+  top: 36.5vh;
+  left: 51vw;
   z-index: 1;
 }
 
 #saturn {
   width: 18vw;
   position: absolute;
-  top: 42vh;
-  left: 67vw;
+  top: 31vh;
+  left: 63vw;
   z-index: 1;
 }
 
 #uranus {
   width: 10vw;
   position: absolute;
-  top: 52vh;
-  left: 84vw;
+  top: 41vh;
+  left: 80vw;
   z-index: 1;
 }
 
 #neptune {
-  width: 9vw;
+  width: 9.5vw;
   position: absolute;
-  top: 53vh;
-  left: 96vw;
+  top: 42vh;
+  left: 90.5vw;
   z-index: 1;
 }
