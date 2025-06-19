@@ -1,5 +1,4 @@
 
-
 .button-container {
   position: absolute;  
   top: 350px;               
@@ -973,6 +972,12 @@ img {
     left: -5vw;
     width: 120vw;
   }
+
+   #sunn {
+    top: 20px;
+    left: -5vw;
+    width: 80vw;
+  }
 }
 
 @media (min-width: 769px) {
@@ -1003,4 +1008,20 @@ img {
       opacity: 1;
     }
   }
+
+  #sunn {
+    top: 30px;
+    left: -10vw;
+    width: 60vw;
+  }
+}
+
+#sunn {
+  position: absolute;
+  top: 60px;
+  left: -20vw;             /* relative horizontal position */
+  width: 40vw;             /* relative width */
+  max-width: 750px;        /* max width like before */
+  min-width: 300px;        /* prevent shrinking too much */
+  z-index: 1;              /* layer if needed */
 }
