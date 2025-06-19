@@ -992,14 +992,14 @@ img {
 
 @media (max-width: 768px) {
 
- #mer { top: 52vh; left: 18vw; font-size: 1rem; }
-  #ven { top: 50vh; left: 25vw; font-size: 1rem; }
-  #ear { top: 48vh; left: 34vw; font-size: 1rem; }
-  #mar { top: 52vh; left: 43vw; font-size: 1rem; }
-  #jup { top: 44vh; left: 54vw; font-size: 1rem; }
-  #sat { top: 47vh; left: 68vw; font-size: 1rem; }
-  #ura { top: 50vh; left: 80vw; font-size: 1rem; }
-  #nep { top: 50vh; left: 90vw; font-size: 1rem; }
+#mer { top: 45vh; left: 17vw; font-size: 0.9rem; }
+  #ven { top: 43vh; left: 25vw; font-size: 0.9rem; }
+  #ear { top: 43vh; left: 33vw; font-size: 0.9rem; }
+  #mar { top: 45vh; left: 41vw; font-size: 0.9rem; }
+  #jup { top: 38vh; left: 53vw; font-size: 0.9rem; }
+  #sat { top: 40vh; left: 66vw; font-size: 0.9rem; }
+  #ura { top: 44vh; left: 78vw; font-size: 0.9rem; }
+  #nep { top: 44vh; left: 88vw; font-size: 0.9rem; }
   
   #header {
     animation: fallingimg-sm 1s ease-out forwards;
@@ -1132,6 +1132,7 @@ body, html {
 #mer {
   top: 39vh;
   left: 18.5vw;
+  font-size: 1rem;
 }
 
 #ven {
