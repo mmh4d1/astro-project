@@ -1041,3 +1041,11 @@ body, html {
   padding: 0;
   overflow-x: hidden;
 }
+
+#venus {
+  width: 8vw;         
+  position: absolute;
+  top: 41vh;                    
+  left: 25vw;                  
+  z-index: 1;
+}
