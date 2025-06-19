@@ -1035,3 +1035,9 @@ img {
   min-width: 50px;      /* Minimum size so it doesn't get too small */
   z-index: 2;           /* Layer above sun if needed */
 }
+
+body, html {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
