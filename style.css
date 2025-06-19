@@ -245,22 +245,23 @@ body {
 
 #blackholee {
   display: none;
-  top: 200px;
-  left: -570px;
   position: absolute;
-  width: 2000px;
+  top: 20vh;             
+  left: 50%;              
+  transform: translateX(-50%) translateY(0);
+  width: 100vw;           
+  max-width: none;      
   z-index: -2;
+  height: auto;
 }
 
 @keyframes rise {
   0% {
-    top: 200px;
+    transform: translateX(-50%) translateY(50vh);
   }
-
   100% {
-    top: -450px;
+    transform: translateX(-50%) translateY(-25vh);
   }
-  
 }
 
 @keyframes absorbed {
