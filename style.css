@@ -980,8 +980,6 @@ img {
 
 #mercury {
   position: absolute;
-  top: 45vh;
-  left: 19vw;           /* Use viewport width for horizontal positioning */
   width: 6vw;           /* Responsive width relative to viewport */
   max-width: 100px;     /* Cap the size at 100px */
   min-width: 50px;      /* Minimum size so it doesn't get too small */
@@ -1109,6 +1107,11 @@ body, html {
 #nep {
   top: 33vh;
   left: 92vw;
+}
+
+#mer, #mercury {
+  top: 45vh;
+  left: 19vw;
 }
 
 
