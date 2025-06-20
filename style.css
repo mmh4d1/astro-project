@@ -991,16 +991,6 @@ img {
 }
 
 @media (max-width: 768px) {
-
-#mer { top: 45vh; left: 17vw; font-size: 0.9rem; }
-  #ven { top: 43vh; left: 25vw; font-size: 0.9rem; }
-  #ear { top: 43vh; left: 33vw; font-size: 0.9rem; }
-  #mar { top: 42vh; left: 41vw; font-size: 0.9rem; }
-  #jup { top: 38vh; left: 53vw; font-size: 0.9rem; }
-  #sat { top: 40vh; left: 66vw; font-size: 0.9rem; }
-  #ura { top: 44vh; left: 78vw; font-size: 0.9rem; }
-  #nep { top: 44vh; left: 88vw; font-size: 0.9rem; }
-  #mer { top: 39vh; left: 18.5vw; font-size: 0.9rem; }
   
   #header {
     animation: fallingimg-sm 1s ease-out forwards;
@@ -1168,4 +1158,15 @@ body, html {
 #nep {
   top: 33vh;
   left: 92vw;
+}
+
+@media (max-width: 1279px) {
+  #mer { top: 45vh; left: 17vw; font-size: 0.9rem; }
+  #ven { top: 43vh; left: 25vw; font-size: 0.9rem; }
+  #ear { top: 43vh; left: 33vw; font-size: 0.9rem; }
+  #mar { top: 45vh; left: 41vw; font-size: 0.9rem; }
+  #jup { top: 38vh; left: 53vw; font-size: 0.9rem; }
+  #sat { top: 40vh; left: 66vw; font-size: 0.9rem; }
+  #ura { top: 44vh; left: 78vw; font-size: 0.9rem; }
+  #nep { top: 44vh; left: 88vw; font-size: 0.9rem; }
 }
