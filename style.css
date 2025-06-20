@@ -1072,8 +1072,6 @@ body, html {
 }
 
 #mer {
-  top: 39vh;
-  left: 18.5vw;
   top: 43vh;
   left: 21.5vw;
    transform: translate(-50%, -120%); 
