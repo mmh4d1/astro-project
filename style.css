@@ -1000,6 +1000,7 @@ img {
   #sat { top: 40vh; left: 66vw; font-size: 0.9rem; }
   #ura { top: 44vh; left: 78vw; font-size: 0.9rem; }
   #nep { top: 44vh; left: 88vw; font-size: 0.9rem; }
+  #mer { top: 39vh; left: 18.5vw; font-size: 0.9rem; }
   
   #header {
     animation: fallingimg-sm 1s ease-out forwards;
