@@ -985,8 +985,7 @@ img {
   #uraov {
     text-align: center;
     font-size: clamp(14px, 1vw, 18px);   /* scales between 14px and 18px */ 
-    height: 80px;   
-    top: 15vh;  /* scales padding with viewport */
+    height: 80px;    /* scales padding with viewport */
     border-radius: 0.3vw;
   }
 
@@ -994,7 +993,7 @@ img {
     text-align: center;
     font-size: clamp(14px, 1vw, 18px);
     height: 80px;           /* shorter height */
-    top: 6vh;               /* move higher (adjust value as needed) */
+    top: 15vh;            /* move higher (adjust value as needed) */
     border-radius: 0.3vw;
   }
 
@@ -1093,7 +1092,7 @@ body, html {
 #sat,
 #ura,
 #nep {
-  color: white;
+  color: black;
   z-index: 10;
   position: absolute;
   opacity: 0;
