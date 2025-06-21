@@ -993,7 +993,7 @@ img {
     text-align: center;
     font-size: clamp(14px, 1vw, 18px);
     height: 80px !important;
-    left: 50.3vw !important;/* shorter height */          /* move higher (adjust value as needed) */
+    left: 55.3vw !important;/* shorter height */          /* move higher (adjust value as needed) */
     border-radius: 0.3vw;
   }
 
