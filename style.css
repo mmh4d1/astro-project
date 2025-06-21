@@ -971,6 +971,16 @@ img {
   }
 }
 
+@media (min-width: 1024px) and (max-width: 1400px) {
+  #uraov {
+    text-align: center;
+    font-size: clamp(14px, 1vw, 18px);   /* scales between 14px and 18px */ 
+    height: 80px;               /* scales padding with viewport */
+    border-radius: 0.3vw;
+  }
+
+  /* Add any other elements styles you want responsive above 1024px */
+}
 
 
 #sunn {
