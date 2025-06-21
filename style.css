@@ -932,6 +932,25 @@ img {
 
 /* Responsive tweaks */
 
+@media (max-width: 768px) {
+  /* Adjust button sizes */
+  #uraov {
+    font-size: 1vw;       /* smaller font size */
+    padding: 0.4vh 1vw;   /* smaller padding */
+    border-radius: 0.25vw;
+  }
+
+  /* Adjust grid or other layouts if needed */
+  .button-container {
+    max-width: 600px;
+    width: 90vw;
+    grid-template-columns: repeat(2, 1fr); /* fewer columns on smaller screen */
+    gap: 8px;
+  }
+
+  /* Adjust any planet titles or other elements */
+}
+
 
 
 @media (max-width: 480px) {
@@ -1059,7 +1078,7 @@ body, html {
 #sat,
 #ura,
 #nep {
-  color: black;
+  color: white;
   z-index: 10;
   position: absolute;
   opacity: 0;
