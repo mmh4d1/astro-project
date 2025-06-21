@@ -339,15 +339,15 @@ body {
 .planetbutton {
   color: rgb(255, 255, 255);
   transition: background-color 0.2s ease, color 0.2s ease;
-   font-size: larger;
-   width: 300px; 
-   height: 100px;
-   background-color: rgb(24, 20, 20);
-   display: flex;
-   align-items: flex-start;
-   justify-content: center;
-padding-top: 10px;
-text-align: center;
+  font-size: clamp(14px, 1.2vw, 18px);    /* Responsive font size */
+  width: clamp(150px, 20vw, 300px);       /* Responsive width */
+  height: clamp(50px, 10vh, 100px);       /* Responsive height */
+  background-color: rgb(24, 20, 20);
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding-top: 10px;
+  text-align: center;
 }
 
 @keyframes marovmove {
