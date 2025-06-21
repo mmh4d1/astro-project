@@ -1013,6 +1013,14 @@ img {
     left: 78.3vw !important;
   }
 
+  #urasy {
+    text-align: center;
+    font-size: clamp(14px, 1vw, 18px);
+    height: 80px !important;        
+    border-radius: 0.3vw;
+    left: 78.3vw !important;
+  }
+
 }
 
 
@@ -1208,6 +1216,16 @@ body, html {
   height: 100px;
   position: absolute;
   top: 5.35vh;
+  left: 69.3vw;
+  font-size: clamp(14px, 1vw, 18px);     /* Resizes proportionally */
+  padding: 0.5vh 1.2vw;                  /* Scales padding */
+  border-radius: 0.3vw;
+}
+
+#urasy {
+  height: 100px;
+  position: absolute;
+  top: 20.35vh;
   left: 69.3vw;
   font-size: clamp(14px, 1vw, 18px);     /* Resizes proportionally */
   padding: 0.5vh 1.2vw;                  /* Scales padding */
