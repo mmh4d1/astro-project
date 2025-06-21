@@ -992,7 +992,7 @@ img {
   #uraff {
     text-align: center;
     font-size: clamp(14px, 1vw, 18px);
-    height: 80px;           /* shorter height */          /* move higher (adjust value as needed) */
+    height: 80px !important;           /* shorter height */          /* move higher (adjust value as needed) */
     border-radius: 0.3vw;
   }
 
@@ -1172,7 +1172,7 @@ body, html {
   height: 100px;
   position: absolute;
   top: 5.35vh;
-  left: 50.3vw;
+  left: 55.3vw;
   font-size: clamp(14px, 1vw, 18px);     /* Resizes proportionally */
   padding: 0.5vh 1.2vw;                  /* Scales padding */
   border-radius: 0.3vw;
