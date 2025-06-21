@@ -1116,10 +1116,13 @@ body, html {
   left: 21.5vw;
 }
 
-.planetbutton {
-  font-size: 0.7vw;
-  padding: 0.1vh 0.6vw;
-  border-radius: 0.1vw;
+#uraov {
+  position: absolute;
+  top: 5.35vh;
+  left: 31.3vw;
+  font-size: clamp(10px, 1.2vw, 18px);
+  padding: 0.5vh 1.2vw;
+  border-radius: 0.3vw;
 }
 
 
