@@ -973,7 +973,7 @@ img {
   }
 }
 
-@media (min-width: 1024px) and (max-width: 1400px) {
+@media (min-width: 1024px) and (max-width: 1559px) {
   #uraov {
     text-align: center;
     font-size: clamp(14px, 1vw, 18px);   /* scales between 14px and 18px */ 
