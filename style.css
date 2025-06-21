@@ -273,19 +273,20 @@ body {
 }
 
 
+
 @keyframes marsmove {
   0% {
     transform: translate(0, 0) scale(1.2);
   }
   100% {
-    transform: translate(-650px, -50px) scale(3);
+    transform: translate(-32vw, -5vh) scale(3);
   }
 
 }
 
 @keyframes revmarsmove {
   0% {
-    transform: translate(-650px, -50px) scale(3);
+    transform: translate(-32vw, -5vh) scale(3);
   }
   100% {
     transform: translate(0, 0) scale(1);
@@ -301,14 +302,14 @@ body {
     transform: translate(0, 0) scale(1.2);
   }
   100% {
-    transform: translate(-300px, -50px) scale(3);
+    transform: translate(-15vw, -5vh) scale(3);
   }
 
 }
 
 @keyframes revvenmove {
   0% {
-    transform: translate(-300px, -50px) scale(3);
+    transform: translate(-15vw, -5vh) scale(3);
   }
   100% {
     transform: translate(0, 0) scale(1);
@@ -320,14 +321,14 @@ body {
     transform: translate(0, 0) scale(1.2);
   }
   100% {
-    transform: translate(-100px, -50px) scale(3);
+    transform: translate(-10vw, -5vh) scale(3);
   }
 
 }
 
 @keyframes revmermove {
   0% {
-    transform: translate(-100px, -50px) scale(3);
+    transform: translate(-10vw, -5vh) scale(3);
   }
   100% {
     transform: translate(0, 0) scale(1);
@@ -729,14 +730,14 @@ text-align: center;
     transform: translate(0, 0) scale(1.2);
   }
   100% {
-    transform: translate(-1550px, -50px) scale(2.8);
+    transform: translate(-80vw, -5vh) scale(2.8);
   }
 
 }
 
 @keyframes revnepmove {
   0% {
-    transform: translate(-1550px, -50px) scale(2.8);
+    transform: translate(-80vw, -5vh) scale(2.8);
   }
   100% {
     transform: translate(0, 0) scale(1);
@@ -796,14 +797,14 @@ text-align: center;
     transform: translate(0, 0) scale(1.2);
   }
   100% {
-    transform: translate(-1100px, -50px) scale(2.2);
+    transform: translate(-57.3vw, -4.6vh) scale(2.2);
   }
 
 }
 
 @keyframes revsatmove {
   0% {
-    transform: translate(-1100px, -50px) scale(2.2);
+    transform: translate(-57.3vw, -4.6vh) scale(2.2);
   }
   100% {
     transform: translate(0, 0) scale(1);
@@ -862,14 +863,13 @@ text-align: center;
     transform: translate(0, 0) scale(1.2);
   }
   100% {
-    transform: translate(-1350px, -50px) scale(2.8);
+    transform: translate(-70vw, -5vh) scale(2.8);
   }
-
 }
 
 @keyframes revuramove {
   0% {
-    transform: translate(-1350px, -50px) scale(2.8);
+    transform: translate(-70vw, -5vh) scale(2.8);
   }
   100% {
     transform: translate(0, 0) scale(1);
