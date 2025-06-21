@@ -1116,5 +1116,11 @@ body, html {
   left: 21.5vw;
 }
 
+.planetbutton {
+  font-size: 1.2vw;
+  padding: 0.5vh 1.2vw;
+  border-radius: 0.5vw;
+}
+
 
 
