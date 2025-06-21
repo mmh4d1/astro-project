@@ -935,9 +935,8 @@ img {
 @media (max-width: 768px) {
   /* Adjust button sizes */
   #uraov {
-    font-size: 1vw;       /* smaller font size */
-    padding: 0.4vh 1vw;   /* smaller padding */
-    border-radius: 0.25vw;
+    font-size: clamp(8px, 1vw, 14px);
+    padding: clamp(2px, 0.4vh, 6px) clamp(4px, 1vw, 10px);
   }
 
   /* Adjust grid or other layouts if needed */
@@ -1078,7 +1077,7 @@ body, html {
 #sat,
 #ura,
 #nep {
-  color: white;
+  color: black;
   z-index: 10;
   position: absolute;
   opacity: 0;
@@ -1140,7 +1139,7 @@ body, html {
   top: 5.35vh;
   left: 31.3vw;
   font-size: clamp(10px, 1.2vw, 18px);
-  padding: 0.5vh 1.2vw;
+  padding: clamp(3px, 0.5vh, 8px) clamp(6px, 1.2vw, 15px);
   border-radius: 0.3vw;
 }
 
