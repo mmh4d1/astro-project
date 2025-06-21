@@ -985,7 +985,7 @@ img {
     text-align: center;
     font-size: clamp(14px, 1vw, 18px);
     height: 80px;           /* shorter height */
-    top: 15vh !important;            /* move higher (adjust value as needed) */
+    top: 22vh !important;            /* move higher (adjust value as needed) */
     border-radius: 0.3vw;
   }
 
