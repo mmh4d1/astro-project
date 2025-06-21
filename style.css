@@ -984,7 +984,7 @@ img {
   #uraex {
     text-align: center;
     font-size: clamp(14px, 1vw, 18px);
-    height: 80px;           /* shorter height */
+    height: 80px !important;           /* shorter height */
     top: 22vh !important;            /* move higher (adjust value as needed) */
     border-radius: 0.3vw;
   }
