@@ -979,6 +979,13 @@ img {
     border-radius: 0.3vw;
   }
 
+  #uraex {
+    text-align: center;
+    font-size: clamp(14px, 1vw, 18px);   /* scales between 14px and 18px */ 
+    height: 80px;               /* scales padding with viewport */
+    border-radius: 0.3vw;
+  }
+
   /* Add any other elements styles you want responsive above 1024px */
 }
 
@@ -1134,6 +1141,16 @@ body, html {
 #uraov {
   position: absolute;
   top: 5.35vh;
+  left: 31.3vw;
+  font-size: clamp(14px, 1vw, 18px);     /* Resizes proportionally */
+  padding: 0.5vh 1.2vw;                  /* Scales padding */
+  border-radius: 0.3vw;
+}
+
+#uraex {
+  height: 100px;
+  position: absolute;
+  top: 8.35vh;
   left: 31.3vw;
   font-size: clamp(14px, 1vw, 18px);     /* Resizes proportionally */
   padding: 0.5vh 1.2vw;                  /* Scales padding */
