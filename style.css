@@ -932,6 +932,16 @@ img {
 
 /* Responsive tweaks */
 
+#uraex {
+  height: 100px;
+  position: absolute;
+  top: 8.35vh;
+  left: 31.3vw;
+  font-size: clamp(14px, 1vw, 18px);     /* Resizes proportionally */
+  padding: 0.5vh 1.2vw;                  /* Scales padding */
+  border-radius: 0.3vw;
+}
+
 @media (max-width: 768px) {
   /* Adjust button sizes */
   #uraov {
@@ -1148,15 +1158,7 @@ body, html {
   border-radius: 0.3vw;
 }
 
-#uraex {
-  height: 100px;
-  position: absolute;
-  top: 8.35vh;
-  left: 31.3vw;
-  font-size: clamp(14px, 1vw, 18px);     /* Resizes proportionally */
-  padding: 0.5vh 1.2vw;                  /* Scales padding */
-  border-radius: 0.3vw;
-}
+
 
 
 
