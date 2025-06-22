@@ -358,13 +358,11 @@ body {
   from {
     width: clamp(200px, 20vw, 300px);
     height: clamp(80px, 10vh, 120px);
-    left: 30vw;
     opacity: 1;
   }
   to {
     width: clamp(800px, 70vw, 1100px);
     height: clamp(600px, 80vh, 800px);
-    left: 29vw;
     opacity: 1;
   }
 }
@@ -399,13 +397,11 @@ body {
   from {
     width: clamp(800px, 70vw, 1100px);
     height: clamp(600px, 80vh, 800px);
-    left: 29vw;
     opacity: 1;
   }
   to {
     width: clamp(200px, 20vw, 300px);
     height: clamp(80px, 10vh, 120px);
-    left: 30vw;
     opacity: 1;
   }
 }
