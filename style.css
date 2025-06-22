@@ -565,42 +565,43 @@ width: clamp(800px, 57vw, 1100px);
 }
 
 
-@keyframes marsgemove {
-  from {
-    width: 300px;
-    height: 100px;
-    left: 970px;
-    top: 200px;
-    opacity: 1;
-  }
-
-  to {
-    width: 1150px;
-    height: 900px;
-    left: 600px;
-    top: 50px;
-    opacity: 1;
-  }
-}
-
 @keyframes revmarsgemove {
   from {
-    width: 1150px;
-    height: 900px;
-    left: 600px;
-    top: 50px;
+    width: clamp(800px, 68vw, 1100px);
+    height: clamp(900px, 100vh, 800px);
+    left: 31.25vw;
+    top: 4.63vh;
     opacity: 1;
   }
 
   to {
-    width: 300px;
-    height: 100px;
-    left: 970px;
-    top: 200px;
+    width: clamp(200px, 15vw, 300px);
+    height: clamp(80px, 8vh, 150px);
+    left: 50.3vw;
+    top: 20.35vh;
+    opacity: 1;
+  }
+}
+
+@keyframes marsgemove {
+  from {
+    width: clamp(200px, 15vw, 300px);
+    height: clamp(80px, 8vh, 150px);
+    left: 50.3vw;
+    top: 20.35vh;
+    opacity: 1;
+  }
+
+  to {
+    width: clamp(800px, 68vw, 1100px);
+    height: clamp(900px, 100vh, 800px);
+    left: 31.25vw;
+    top: 4.63vh;
     opacity: 1;
 
   }
 }
+
 
 #pic {
   z-index: 99999;
@@ -1153,6 +1154,44 @@ width: clamp(180px, 18vw, 260px);
     opacity: 1;
   }
 }
+
+  @keyframes marsgemove {
+  from {
+    width: clamp(180px, 18vw, 260px);
+    height: clamp(70px, 9vh, 110px);
+    left: 55.3vw;
+    top: 20.35vh;
+    opacity: 1;
+  }
+
+  to {
+    width: clamp(700px, 60vw, 950px);
+    height: clamp(900px, 100vh, 750px);
+    left: 31.25vw;
+    top: 4.63vh;
+    opacity: 1;
+
+  }
+}
+
+@keyframes revmarsgemove {
+  from {
+    width: clamp(700px, 60vw, 950px);
+    height: clamp(900px, 100vh, 750px);
+    left: 31.25vw;
+    top: 4.63vh;
+    opacity: 1;
+  }
+
+  to {
+    width: clamp(180px, 18vw, 260px);
+    height: clamp(70px, 9vh, 110px);
+    left: 55.3vw;
+    top: 20.35vh;
+    opacity: 1;
+  }
+}
+
 
 
   #uraovep {
