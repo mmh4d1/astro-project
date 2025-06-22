@@ -1170,6 +1170,24 @@ width: clamp(180px, 18vw, 260px);
   font-size: 1.6vw;
 }
 
+  #urast {
+  font-size: 0.85vw;
+  font-family: Arial, Helvetica, sans-serif;
+  position: absolute;
+  width: 64.08vw;
+  left: 32.29vw;
+  top: 9.26vh;
+}
+
+#urast2 {
+  font-size: 0.85vw;
+  font-family: Arial, Helvetica, sans-serif;
+  position: absolute;
+  width: 52.08vw;
+  left: 62.90vw;
+  top: 21.0vh;
+}
+
 
 
 }
