@@ -930,33 +930,33 @@ img {
   display: block;
 }
 
-#urasy {
+#urasy, #satsy, #nepsy, #marssy, #mersy, #venussy {
   top: 20.35vh;
   left: 69.3vw;
 }
 
-#uraov {
+#uraov, #nepov, #satov, #venusoverview, #marsoverview, #merov {
   top: 5.35vh;
   left: 31.3vw;
 }
 
 
-#uraex {
+#uraex, #merex, #nepex, #satex, #venusex, #marsex {
   top: 20.35vh;
   left: 31.3vw;
 }
 
-#uraff {
+#uraff, #venusff, #marsff, #merff, #nepff, #satff {
   top: 5.35vh;
   left: 50.3vw;
 }
 
-#urage {
+#urage, #venusge, #marsge, #satge, #nepge, #merge {
   top: 20.35vh;
   left: 50.3vw;
 }
 
-#urami {
+#urami, #marsmi, #venusmi, #mermi, #nepmi, #satmi {
   top: 5.35vh;
   left: 69.3vw;
 }
@@ -1005,14 +1005,14 @@ img {
 }
 
 @media (min-width: 1024px) and (max-width: 1559px) {
-  #uraov {
+  #uraov, #nepov, #satov, #venusoverview, #marsoverview, #merov {
     text-align: center;
     font-size: clamp(14px, 1vw, 18px);   /* scales between 14px and 18px */ 
     height: 80px;    /* scales padding with viewport */
     border-radius: 0.3vw;
   }
 
-  #uraex {
+  #uraex, #merex, #nepex, #satex, #venusex, #marsex  {
     text-align: center;
     font-size: clamp(14px, 1vw, 18px);
     height: 80px;           /* shorter height */
@@ -1020,7 +1020,7 @@ img {
     border-radius: 0.3vw;
   }
 
-  #uraff {
+  #uraff, #venusff, #marsff, #merff, #nepff, #satff {
     text-align: center;
     font-size: clamp(14px, 1vw, 18px);
     height: 80px !important;
@@ -1028,7 +1028,7 @@ img {
     border-radius: 0.3vw;
   }
 
-  #urage {
+  #urage, #venusge, #marsge, #satge, #nepge, #merge  {
     text-align: center;
     font-size: clamp(14px, 1vw, 18px);
     height: 80px !important;
@@ -1036,7 +1036,7 @@ img {
     border-radius: 0.3vw;
   }
 
-   #urami {
+   #urami, #marsmi, #venusmi, #mermi, #nepmi, #satmi {
     text-align: center;
     font-size: clamp(14px, 1vw, 18px);
     height: 80px !important;        
@@ -1044,7 +1044,7 @@ img {
     left: 78.3vw !important;
   }
 
-  #urasy {
+  #urasy, #satsy, #nepsy, #marssy, #mersy, #venussy {
     text-align: center;
     font-size: clamp(14px, 1vw, 18px);
     height: 80px;        
