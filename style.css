@@ -816,49 +816,50 @@ width: clamp(800px, 57vw, 1100px);
 }
 
 #satovep {
-  top: 150px;
-  left: 650px;
+  top: 13.89vh;
+  left: 33.85vw;
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 30px;
-  width: 1000px;
+  font-size: 1.56vw;
+  width: 52.08vw;
   position: absolute; 
   z-index: 99999999999;
 }
 
+
 #satfflist {
-  top: 120px;
-  left: 620px;
-  font-size: 24px;
-  width: 1000px;
+  top: 10.0vh;
+  left: 32.29vw;
+  font-size: 1.18vw;
+  width: 52.08vw;
   position: absolute; 
   z-index: 99999999999;
 }
 
 #satmiss {
-  top: 100px;
-  left: 620px;
-  font-size: 15.2px;
-  width: 1000px;
+  top: 9.26vh;
+  left: 32.29vw;
+  font-size: 0.79vw;
+  width: 52.08vw;
   position: absolute; 
   z-index: 99999999999;
 }
 
 #satast {
-  font-size: 15px;
- font-family: Arial, Helvetica, sans-serif;
- position: absolute;
-  width: 1000px;
-  left: 620px;
-  top: 100px;
+  font-size: 0.78vw;
+  font-family: Arial, Helvetica, sans-serif;
+  position: absolute;
+  width: 52.08vw;
+  left: 32.29vw;
+  top: 9.26vh;
 }
 
 #satast2 {
- font-size: 14px;
- font-family: Arial, Helvetica, sans-serif;
- position: absolute;
-  width: 1000px;
-  left: 1150px;
-  top: 240px;
+  font-size: 0.73vw;
+  font-family: Arial, Helvetica, sans-serif;
+  position: absolute;
+  width: 52.08vw;
+  left: 59.90vw;
+  top: 23.22vh;
 }
 
 @keyframes uramove {
@@ -1186,6 +1187,29 @@ width: clamp(180px, 18vw, 260px);
   width: 52.08vw;
   left: 62.90vw;
   top: 21.0vh;
+}
+
+  #satovep {
+  font-size: 1.96vw;
+  width: 65.08vw;
+}
+
+  #satfflist {
+  font-size: 1.3vw;
+}
+
+  #satmiss {
+  font-size: 0.97vw;
+}
+
+  #satast {
+    width: 58.08vw;
+}
+
+#satast2 {
+  font-size: 0.78vw;
+  left: 60.1vw;
+  top: 20vh;
 }
 
 
