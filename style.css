@@ -272,7 +272,12 @@ body {
   }
 }
 
-
+#marsland {
+  position: absolute;
+  left: 32.29vw;
+  top: 12.04vh;
+  width: 20.83vw;
+}
 
 @keyframes marsmove {
   0% {
