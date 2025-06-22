@@ -749,49 +749,49 @@ width: clamp(800px, 57vw, 1100px);
 }
 
 #nepovep {
-  top: 150px;
-  left: 650px;
+  top: 13.89vh;
+  left: 33.85vw;
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 27px;
-  width: 1000px;
+  font-size: 1.41vw;
+  width: 52.08vw;
   position: absolute; 
   z-index: 99999999999;
 }
 
 #nepfflist {
-  top: 120px;
-  left: 620px;
-  font-size: 19px;
-  width: 1000px;
+  top: 11.11vh;
+  left: 32.29vw;
+  font-size: 0.89vw;
+  width: 52.08vw;
   position: absolute; 
   z-index: 99999999999;
 }
 
 #nepmilist {
-  top: 120px;
-  left: 620px;
-  font-size: 26px;
-  width: 1000px;
+  top: 11.11vh;
+  left: 32.29vw;
+  font-size: 1.35vw;
+  width: 52.08vw;
   position: absolute; 
   z-index: 99999999999;
 }
 
 #nepast {
-  font-size: 15px;
- font-family: Arial, Helvetica, sans-serif;
- position: absolute;
-  width: 1000px;
-  left: 620px;
-  top: 100px;
+  font-size: 0.78vw;
+  font-family: Arial, Helvetica, sans-serif;
+  position: absolute;
+  width: 52.08vw;
+  left: 32.29vw;
+  top: 9.26vh;
 }
 
 #nepast2 {
- font-size: 15px;
- font-family: Arial, Helvetica, sans-serif;
- position: absolute;
-  width: 1000px;
-  left: 1170px;
-  top: 250px;
+  font-size: 0.78vw;
+  font-family: Arial, Helvetica, sans-serif;
+  position: absolute;
+  width: 52.08vw;
+  left: 60.94vw;
+  top: 23.15vh;
 }
 
 
@@ -1211,7 +1211,30 @@ width: clamp(180px, 18vw, 260px);
   left: 60.1vw;
   top: 20vh;
 }
+#nepast {
+  font-size: 0.9vw;
+}
 
+#nepast2 {
+  font-size: 0.9vw;
+  width: 28.08vw;
+  left: 63.94vw;
+  top: 24.15vh;
+}
+
+  #nepmilist {
+  font-size: 1.65vw;
+}
+
+  #nepfflist {
+  font-size: 1vw;
+  width: 54.08vw;
+}
+
+  #nepovep {
+  font-size: 1.81vw;
+  width: 65.08vw;
+}
 
 
 }
