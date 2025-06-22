@@ -1763,25 +1763,7 @@ marsex.addEventListener("click", () => {
 });
 
 marsge.addEventListener("click", () => {
-    if(!marsgeZoomed) {
-  hideAllMarsButton(marsge);
-  marsgeZoomed = true;
-  marsge.style.animation = "none";
-   void marsge.offsetWidth;
-   marsge.style.animation = "marsgemove 1s ease forwards";
-
-   setTimeout (() => {
-   Fade(marsimg);
-   }, 600);
- 
-} else {
-   FadeOut(marsimg);
-   showAllMarsButtons();
-   marsge.style.animation = "none";
-   void marsge.offsetWidth;
-  marsge.style.animation = "revmarsgemove 1s ease forwards";
-
-   marsgeZoomed = false;
+    window.alert("WORK IN PROGRESS");
 }
 
 });
