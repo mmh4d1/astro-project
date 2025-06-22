@@ -376,19 +376,19 @@ body {
 }
 
 .marovp {
-  top: 100px;
-  left: 650px;
-  font-size: x-large;
-  width: 1000px;
+  top: 9.26vh;
+  left: 33.85vw;
+  font-size: 1.4vw;
+  width: 52.08vw;
   position: absolute; 
   z-index: 99999999999;
 }
 
 .marovp2 {
-  top: 475px;
-  left: 650px;
-  font-size: x-large;
-  width: 1000px;
+  top: 56.98vh;
+  left: 33.85vw;
+  font-size: 1.4vw;
+  width: 52.08vw;
   position: absolute; 
   z-index: 99999999999;
 }
@@ -423,10 +423,10 @@ body {
 }
 
 #marsfflist {
-  top: 100px;
-  left: 650px;
-  font-size: 23px;
-  width: 1000px;
+  top: 11.26vh;
+  left: 30.85vw;
+  font-size: 1.05vw;
+  width: 52.08vw;
   position: absolute; 
   z-index: 99999999999;
 }
@@ -555,10 +555,10 @@ width: clamp(800px, 57vw, 1100px);
 }
 
 #marsmissions {
-  font-size: 12px;
-  width: 1050px;
-  top: 120px;
-  left: 630px;
+  font-size: 0.63vw;
+  width: 54.69vw;
+  top: 11.11vh;
+  left: 32.81vw;
   position: relative;
   z-index: 9999999;
   font-family: Arial, Helvetica, sans-serif;
@@ -609,31 +609,31 @@ width: clamp(800px, 57vw, 1100px);
 
 
 #symars {
-  font-size: small;
+  font-size: 0.73vw;
   font-family: Arial, Helvetica, sans-serif;
   z-index: 99999;
   position: absolute;
-  width: 1000px;
-  left: 650px;
-  top: 100px;
+  width: 52.08vw;
+  left: 33.85vw;
+  top: 9.26vh;
 }
 
 #marsast {
-  font-size: 15px;
- font-family: Arial, Helvetica, sans-serif;
- position: absolute;
-  width: 1000px;
-  left: 650px;
-  top: 360px;
+  font-size: 0.78vw;
+  font-family: Arial, Helvetica, sans-serif;
+  position: absolute;
+  width: 52.08vw;
+  left: 33.85vw;
+  top: 37.33vh;
 }
 
 #marsast2 {
- font-size: 15px;
- font-family: Arial, Helvetica, sans-serif;
- position: absolute;
-  width: 1000px;
-  left: 1150px;
-  top: 360px;
+  font-size: 0.78vw;
+  font-family: Arial, Helvetica, sans-serif;
+  position: absolute;
+  width: 52.08vw;
+  left: 59.90vw;
+  top: 37.33vh;
 }
 
 
@@ -1280,6 +1280,42 @@ width: clamp(180px, 18vw, 260px);
   font-size: 2.2vw;
   width: 65.08vw;
 }
+
+  #symars {
+  font-size: 0.93vw;
+}
+
+#marsast {
+  font-size: 0.98vw;
+  left: 32.85vw;
+  top: 38.33vh;
+}
+
+#marsast2 {
+  font-size: 0.98vw;
+  left: 61.90vw;
+  top: 38.33vh;
+}
+
+  #marsmissions {
+  font-size: 0.8vw;
+}
+
+  #marsfflist {
+  font-size: 1.24vw;
+}
+
+  .marovp {
+  font-size: 1.8vw;
+  width: 65.08vw;
+}
+
+.marovp2 {
+  font-size: 1.8vw;
+  width: 65.08vw;
+}
+
+  
 
 }
 
