@@ -674,11 +674,11 @@ width: clamp(800px, 57vw, 1100px);
 }
 
 #merovep {
-  top: 150px;
-  left: 650px;
+  top: 13.89vh;
+  left: 33.85vw;
   font-family: Arial, Helvetica, sans-serif;
-  font-size: xx-large;
-  width: 1000px;
+  font-size: 1.65vw;
+  width: 52.08vw;
   position: absolute; 
   z-index: 99999999999;
 }
@@ -692,40 +692,41 @@ width: clamp(800px, 57vw, 1100px);
   z-index: 99999999999;
 }
 
+
 #merfflist {
-  top: 120px;
-  left: 620px;
-  font-size: x-large;
-  width: 1000px;
+  top: 11.11vh;
+  left: 32.29vw;
+  font-size: 1.29vw;
+  width: 52.08vw;
   position: absolute; 
   z-index: 99999999999;
 }
 
 #mercmission {
-  top: 120px;
-  left: 620px;
-  font-size: 21px;
-  width: 1000px;
+  top: 11.11vh;
+  left: 32.29vw;
+  font-size: 1.15vw;
+  width: 52.08vw;
   position: absolute; 
   z-index: 99999999999;
 }
 
 #mersym {
-  font-size: 15px;
- font-family: Arial, Helvetica, sans-serif;
- position: absolute;
-  width: 1000px;
-  left: 620px;
-  top: 100px;
+  font-size: 0.78vw;
+  font-family: Arial, Helvetica, sans-serif;
+  position: absolute;
+  width: 56.08vw;
+  left: 32.29vw;
+  top: 11.26vh;
 }
 
 #merast2 {
- font-size: 15px;
- font-family: Arial, Helvetica, sans-serif;
- position: absolute;
-  width: 1000px;
-  left: 1200px;
-  top: 250px;
+  font-size: 0.78vw;
+  font-family: Arial, Helvetica, sans-serif;
+  position: absolute;
+  width: 52.08vw;
+  left: 62.50vw;
+  top: 25.15vh;
 }
 
 @keyframes nepmove {
@@ -1235,7 +1236,25 @@ width: clamp(180px, 18vw, 260px);
   font-size: 1.81vw;
   width: 65.08vw;
 }
+#mersym {
+  font-size: 0.88vw;
+}
 
+#merast2 {
+  font-size: 0.88vw;
+  width: 29.08vw;
+  left: 64vw;
+  top: 24.15vh;
+}
+
+  #mercmission {
+  font-size: 1.45vw;
+}
+
+  #merovep {
+  font-size: 2.1vw;
+  width: 65.08vw;
+}
 
 }
 
