@@ -486,35 +486,36 @@ body {
 
 @keyframes marsmimove {
   from {
-    width: 300px;
-    height: 100px;
-    left: 1340px;
+  width: clamp(200px, 15vw, 300px);
+    height: clamp(80px, 8vh, 150px);
+    left: 69.3vw;
     opacity: 1;
   }
 
   to {
-    width: 1100px;
-    height: 900px;
-    left: 600px;
+     width: clamp(800px, 57vw, 1100px);
+    height: clamp(900px, 100vh, 800px);
+    left: 31.25vw;
     opacity: 1;
   }
 }
 
 @keyframes revmarsmimove {
   from {
-    width: 1100px;
-    height: 900px;
-    left: 600px;
+width: clamp(800px, 57vw, 1100px);
+    height: clamp(900px, 100vh, 800px);
+    left: 31.25vw;
     opacity: 1;
   }
 
   to {
-   width: 300px;
-    height: 100px;
-    left: 1340px;
+   width: clamp(200px, 15vw, 300px);
+    height: clamp(80px, 8vh, 150px);
+    left: 69.3vw;
     opacity: 1;
 }
 }
+
 
 @keyframes marsexmove {
   from {
