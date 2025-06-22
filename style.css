@@ -1023,25 +1023,25 @@ img {
   #uraff, #venusff, #marsff, #merff, #nepff, #satff {
     text-align: center;
     font-size: clamp(14px, 1vw, 18px);
-    height: 80px !important;
-    left: 55.3vw !important;/* shorter height */          /* move higher (adjust value as needed) */
+    height: 80px;
+    left: 55.3vw;/* shorter height */          /* move higher (adjust value as needed) */
     border-radius: 0.3vw;
   }
 
   #urage, #venusge, #marsge, #satge, #nepge, #merge  {
     text-align: center;
     font-size: clamp(14px, 1vw, 18px);
-    height: 80px !important;
-    left: 55.3vw !important;/* shorter height */          /* move higher (adjust value as needed) */
+    height: 80px;
+    left: 55.3vw;/* shorter height */          /* move higher (adjust value as needed) */
     border-radius: 0.3vw;
   }
 
    #urami, #marsmi, #venusmi, #mermi, #nepmi, #satmi {
     text-align: center;
     font-size: clamp(14px, 1vw, 18px);
-    height: 80px !important;        
+    height: 80px;        
     border-radius: 0.3vw;
-    left: 78.3vw !important;
+    left: 78.3vw;
   }
 
   #urasy, #satsy, #nepsy, #marssy, #mersy, #venussy {
