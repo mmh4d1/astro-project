@@ -909,21 +909,21 @@ width: clamp(800px, 57vw, 1100px);
 }
 
 #urast {
-  font-size: 14px;
- font-family: Arial, Helvetica, sans-serif;
- position: absolute;
-  width: 1000px;
-  left: 620px;
-  top: 100px;
+  font-size: 0.75vw;
+  font-family: Arial, Helvetica, sans-serif;
+  position: absolute;
+  width: 55.08vw;
+  left: 32.29vw;
+  top: 9.26vh;
 }
 
 #urast2 {
- font-size: 14px;
- font-family: Arial, Helvetica, sans-serif;
- position: absolute;
-  width: 1000px;
-  left: 1150px;
-  top: 230px;
+  font-size: 0.74vw;
+  font-family: Arial, Helvetica, sans-serif;
+  position: absolute;
+  width: 52.08vw;
+  left: 59.90vw;
+  top: 23.0vh;
 }
 
 
