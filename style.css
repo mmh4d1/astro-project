@@ -899,10 +899,10 @@ width: clamp(800px, 57vw, 1100px);
 }
 
 #uranusmissions {
-  top: 120px;
-  left: 620px;
-  font-size: 26px;
-  width: 1000px;
+  top: 12vh;
+  left: 32vw;
+  font-size: 1.4vw;
+  width: 56vw;
   position: absolute; 
   z-index: 99999999999;
 }
@@ -1125,6 +1125,13 @@ img {
   font-size: 1.35vw;         
   width: 58.5vw;            
 }
+
+  #uranusmissions {
+  top: 12vh;
+  left: 31vw;
+  font-size: 1.6vw;
+}
+
 
 
 }
