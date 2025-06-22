@@ -1115,6 +1115,43 @@ img {
     }
   }
 
+@keyframes marssymove {
+  from {
+      width: clamp(180px, 18vw, 260px);
+      height: clamp(70px, 9vh, 110px);
+    left: 78.3vw;
+    top: 18.52vh;
+    opacity: 1;
+  }
+
+  to {
+      width: clamp(700px, 60vw, 950px);
+      height: clamp(900px, 100vh, 750px);
+    left: 31.25vw;
+    top: 4.63vh;
+    opacity: 1;
+  }
+}
+
+@keyframes revmarssymove {
+  from {
+     width: clamp(700px, 60vw, 950px);
+      height: clamp(900px, 100vh, 750px);
+    left: 31.25vw;
+    top: 4.63vh;
+    opacity: 1;
+  }
+
+  to {
+    
+width: clamp(180px, 18vw, 260px);
+      height: clamp(70px, 9vh, 110px);
+    left: 78.3vw;
+    top: 18.52vh;
+    opacity: 1;
+  }
+}
+
 
   #uraovep {
   left: 36.85vw;
