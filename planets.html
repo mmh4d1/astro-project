@@ -1890,30 +1890,12 @@ venussy.addEventListener("click", () => {
 
 });
 
-venusge.addEventListener("click", () => {
-    if(!venusgeZoomed) {
-        venusgeZoomed = true;
-        venusge.style.animation = "none";
-        void venusge.offsetWidth;
-        venusge.style.animation = "marsgemove 1s ease forwards";
-        hideAllVenusButton(venusge);
-
-        setTimeout(() => {
-            Fade(venusimg);
-        }, 600);
-
-    } else {
-      showAllVenusButton();
-        FadeOut(venusimg);
-        venusge.style.animation = "none";
-        void venusge.offsetWidth;
-        venusge.style.animation = "revmarsgemove 1s ease forwards";
-
-        venusgeZoomed = false;
-    }
-});
 
 venusex.addEventListener("click", () => {
+   window.alert("WORK IN PROGRESS");
+});
+
+venusge.addEventListener("click", () => {
    window.alert("WORK IN PROGRESS");
 });
 
