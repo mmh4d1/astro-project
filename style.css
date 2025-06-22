@@ -348,6 +348,10 @@ body {
   justify-content: center;
   padding-top: 10px;
   text-align: center;
+  padding: 0.5vh 1.2vw;
+  border-radius: 0.3vw;
+   height: 100px;
+  position: absolute;
 }
 
 @keyframes marovmove {
@@ -930,6 +934,37 @@ img {
   display: block;
 }
 
+#urasy {
+  top: 20.35vh;
+  left: 69.3vw;
+}
+
+#uraov {
+  top: 5.35vh;
+  left: 31.3vw;
+}
+
+
+#uraex {
+  top: 20.35vh;
+  left: 31.3vw;
+}
+
+#uraff {
+  top: 5.35vh;
+  left: 50.3vw;
+}
+
+#urage {
+  top: 20.35vh;
+  left: 50.3vw;
+}
+
+#urami {
+  top: 5.35vh;
+  left: 69.3vw;
+}
+
 /* Responsive tweaks */
 
 
@@ -984,8 +1019,8 @@ img {
   #uraex {
     text-align: center;
     font-size: clamp(14px, 1vw, 18px);
-    height: 80px !important;           /* shorter height */
-    top: 22vh !important;            /* move higher (adjust value as needed) */
+    height: 80px;           /* shorter height */
+    top: 22vh;            /* move higher (adjust value as needed) */
     border-radius: 0.3vw;
   }
 
@@ -1016,9 +1051,9 @@ img {
   #urasy {
     text-align: center;
     font-size: clamp(14px, 1vw, 18px);
-    height: 80px !important;        
+    height: 80px;        
     border-radius: 0.3vw;
-    left: 78.3vw !important;
+    left: 78.3vw;
   }
 
 }
@@ -1172,64 +1207,8 @@ body, html {
   left: 21.5vw;
 }
 
-#uraov {
-  position: absolute;
-  top: 5.35vh;
-  left: 31.3vw;
-  font-size: clamp(14px, 1vw, 18px);     /* Resizes proportionally */
-  padding: 0.5vh 1.2vw;                  /* Scales padding */
-  border-radius: 0.3vw;
-}
 
 
-#uraex {
-  height: 100px;
-  position: absolute;
-  top: 20.35vh;
-  left: 31.3vw;
-  font-size: clamp(14px, 1vw, 18px);     /* Resizes proportionally */
-  padding: 0.5vh 1.2vw;                  /* Scales padding */
-  border-radius: 0.3vw;
-}
 
-#uraff {
-  height: 100px;
-  position: absolute;
-  top: 5.35vh;
-  left: 50.3vw;
-  font-size: clamp(14px, 1vw, 18px);     /* Resizes proportionally */
-  padding: 0.5vh 1.2vw;                  /* Scales padding */
-  border-radius: 0.3vw;
-}
-
-#urage {
-  height: 100px;
-  position: absolute;
-  top: 20.35vh;
-  left: 50.3vw;
-  font-size: clamp(14px, 1vw, 18px);     /* Resizes proportionally */
-  padding: 0.5vh 1.2vw;                  /* Scales padding */
-  border-radius: 0.3vw;
-}
-
-#urami {
-  height: 100px;
-  position: absolute;
-  top: 5.35vh;
-  left: 69.3vw;
-  font-size: clamp(14px, 1vw, 18px);     /* Resizes proportionally */
-  padding: 0.5vh 1.2vw;                  /* Scales padding */
-  border-radius: 0.3vw;
-}
-
-#urasy {
-  height: 100px;
-  position: absolute;
-  top: 20.35vh;
-  left: 69.3vw;
-  font-size: clamp(14px, 1vw, 18px);     /* Resizes proportionally */
-  padding: 0.5vh 1.2vw;                  /* Scales padding */
-  border-radius: 0.3vw;
-}
 
 
