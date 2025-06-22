@@ -406,17 +406,18 @@ body {
   }
 }
 
+
 @keyframes marffmove {
   from {
-    width: 300px;
-    height: 100px;
-    left: 970px;
+    width: clamp(200px, 15vw, 300px);
+    height: clamp(80px, 8vh, 120px);
+    left: 50.3vw;
     opacity: 1;
   }
   to {
-    width: 1100px;
-    height: 800px;
-    left: 600px;
+    width: clamp(800px, 57vw, 1100px);
+    height: clamp(600px, 74vh, 800px);
+    left: 31.25vw;
     opacity: 1;
   }
 }
@@ -433,16 +434,16 @@ body {
 
 @keyframes revmarffmove {
   from {
-    width: 1100px;
-    height: 800px;
-    left: 600px;
+    width: clamp(800px, 57vw, 1100px);
+    height: clamp(600px, 74vh, 800px);
+    left: 31.25vw;
     opacity: 1;
 
   }
   to {
-    width: 300px;
-    height: 100px;
-    left: 970px;
+    width: clamp(200px, 15vw, 300px);
+    height: clamp(80px, 8vh, 120px);
+    left: 50.3vw;
     opacity: 1;
   }
 }
