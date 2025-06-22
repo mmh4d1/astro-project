@@ -638,39 +638,39 @@ width: clamp(800px, 57vw, 1100px);
 
 
 #venusfflist {
-  top: 120px;
-  left: 620px;
-  font-size: x-large;
-  width: 1000px;
+  top: 11.11vh;
+  left: 32.29vw;
+  font-size: 1.2vw;
+  width: 52.08vw;
   position: absolute; 
   z-index: 99999999999;
 }
 
 #venusmission {
-  top: 120px;
-  left: 620px;
-  font-size: 15px;
-  width: 1000px;
+  top: 11.11vh;
+  left: 32.29vw;
+  font-size: 0.78vw;
+  width: 52.08vw;
   position: absolute; 
   z-index: 99999999999;
 }
 
 #venusa {
-  font-size: 15px;
- font-family: Arial, Helvetica, sans-serif;
- position: absolute;
-  width: 1000px;
-  left: 620px;
-  top: 100px;
+  font-size: 0.78vw;
+  font-family: Arial, Helvetica, sans-serif;
+  position: absolute;
+  width: 52.08vw;
+  left: 32.29vw;
+  top: 9.26vh;
 }
 
 #venusa2 {
- font-size: 15px;
- font-family: Arial, Helvetica, sans-serif;
- position: absolute;
-  width: 1000px;
-  left: 550px;
-  top: 200px;
+  font-size: 0.78vw;
+  font-family: Arial, Helvetica, sans-serif;
+  position: absolute;
+  width: 52.08vw;
+  left: 28.95vw;
+  top: 18.52vh;
 }
 
 #merovep {
@@ -684,10 +684,10 @@ width: clamp(800px, 57vw, 1100px);
 }
 
 #venusovep {
-  top: 100px;
-  left: 650px;
-  font-size: xx-large;
-  width: 1000px;
+  top: 9.26vh;
+  left: 33.85vw;
+  font-size: 1.7vw;
+  width: 52.08vw;
   position: absolute; 
   z-index: 99999999999;
 }
@@ -1253,6 +1253,31 @@ width: clamp(180px, 18vw, 260px);
 
   #merovep {
   font-size: 2.1vw;
+  width: 65.08vw;
+}
+
+  #venusa {
+  font-size: 0.9vw;
+}
+
+#venusa2 {
+  font-size: 0.85vw;
+  width: 27.08vw;
+  left: 31.95vw;
+  top: 19.52vh;
+}
+
+  #venusmission {
+  font-size: 0.9vw;
+}
+
+
+  #venusfflist {
+  font-size: 1.4vw;
+}
+
+  #venusovep {
+  font-size: 2.2vw;
   width: 65.08vw;
 }
 
