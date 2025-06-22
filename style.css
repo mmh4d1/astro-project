@@ -889,10 +889,10 @@ body {
 }
 
 #urafflist {
-  top: 120px;
-  left: 620px;
-  font-size: 23px;
-  width: 1000px;
+  top: 12vh;      
+  left: 31vw;              
+  font-size: 1.3vw;       
+  width: 58vw;         
   position: absolute; 
   z-index: 99999999999;
 }
@@ -1088,6 +1088,12 @@ img {
   font-size: 1.81vw;
    width: 62.08vw;
 }
+  #urafflist { 
+  left: 30vw;              
+  font-size: 1.35vw;         
+  width: 58.5vw;            
+}
+
 
 }
 
