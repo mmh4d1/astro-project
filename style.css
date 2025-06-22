@@ -1053,6 +1053,36 @@ img {
     left: 78.3vw;
   }
 
+  @keyframes marffmove {
+    from {
+      width: clamp(180px, 18vw, 260px);
+      height: clamp(70px, 9vh, 110px);
+      left: 55.3vw;
+      opacity: 1;
+    }
+    to {
+      width: clamp(700px, 60vw, 950px);
+      height: clamp(500px, 70vh, 750px);
+      left: 30vw;
+      opacity: 1;
+    }
+  }
+
+  @keyframes revmarffmove {
+    from {
+      width: clamp(700px, 60vw, 950px);
+      height: clamp(500px, 70vh, 750px);
+      left: 30vw;
+      opacity: 1;
+    }
+    to {
+      width: clamp(180px, 18vw, 260px);
+      height: clamp(70px, 9vh, 110px);
+      left: 55.3vw;
+      opacity: 1;
+    }
+  }
+
   #uraovep {
   left: 36.85vw;
   font-size: 1.81vw;
