@@ -458,7 +458,7 @@ body {
   }
 
   to {
-    width: clamp(800px, 57vw, 1100px);
+    width: clamp(800px, 65vw, 1100px);
     height: clamp(900px, 100vh, 800px);
     left: 31.25vw;
     top: 4.63vh;
@@ -468,7 +468,7 @@ body {
 
 @keyframes revmarssymove {
   from {
-    width: clamp(800px, 57vw, 1100px);
+    width: clamp(800px, 65vw, 1100px);
     height: clamp(900px, 100vh, 800px);
     left: 31.25vw;
     top: 4.63vh;
