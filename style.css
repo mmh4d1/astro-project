@@ -1416,6 +1416,28 @@ width: clamp(180px, 18vw, 260px);
 #venusa2 {
   font-size: 0.75vw;
 }
+#merovep {
+  font-size: 2vw;
+}
+
+#mercmission {
+  font-size: 1.1vw;
+}
+
+#merfflist {
+    font-size: 1.2vw;
+    top: 15vh;
+  }
+
+#mersym {
+  font-size: 0.7vw;
+  top: 15vh;
+}
+
+#merast2 {
+  font-size: 0.8vw;
+  top: 27.15vh;
+}
 
 }
 
