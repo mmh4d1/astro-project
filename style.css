@@ -1363,7 +1363,7 @@ width: clamp(180px, 18vw, 260px);
 
 }
 
-@media (max-height: 700px) {
+@media (max-height: 800px) {
   .marovp {
     top: 12vh;
     font-size: 1.5vw;
