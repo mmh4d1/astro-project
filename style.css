@@ -1087,7 +1087,7 @@ img {
     }
     to {
       width: clamp(180px, 18vw, 260px);
-      height: clamp(70px, 9vh, 110px);
+      height: clamp(70px, 12vh, 110px);
       left: 55.3vw;
       opacity: 1;
     }
@@ -1117,7 +1117,7 @@ img {
     }
     to {
      width: clamp(180px, 18vw, 260px);
-      height: clamp(70px, 9vh, 110px);
+      height: clamp(70px, 12vh, 110px);
       left: 78.3vw;
       opacity: 1;
     }
@@ -1153,7 +1153,7 @@ img {
   to {
     
 width: clamp(180px, 18vw, 260px);
-      height: clamp(70px, 9vh, 110px);
+      height: clamp(70px, 12vh, 110px);
     left: 78.3vw;
     top: 18.52vh;
     opacity: 1;
@@ -1190,7 +1190,7 @@ width: clamp(180px, 18vw, 260px);
 
   to {
     width: clamp(180px, 18vw, 260px);
-    height: clamp(70px, 9vh, 110px);
+    height: clamp(70px, 12vh, 110px);
     left: 55.3vw;
     top: 20.35vh;
     opacity: 1;
