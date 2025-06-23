@@ -1397,7 +1397,26 @@ width: clamp(180px, 18vw, 260px);
   font-size: 0.8vw;
   top: 39.33vh;
 }
-  
+  #venusovep {
+    font-size: 2vw;
+  }
+
+#venusfflist {
+  font-size: 1.1vw;
+}
+
+#venusmission {
+  font-size: 0.75vw;
+}
+
+  #venusa {
+  font-size: 0.75vw;
+}
+
+#venusa2 {
+  font-size: 0.75vw;
+}
+
 }
 
 #sunn {
