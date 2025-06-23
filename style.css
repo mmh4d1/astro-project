@@ -1,7 +1,7 @@
 
 .button-container {
   position: absolute;  
-  top: 350px;               
+  top: 40vh;               
   left: 50%;                
   transform: translateX(-50%);
   
