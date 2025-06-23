@@ -1438,7 +1438,27 @@ width: clamp(180px, 18vw, 260px);
   font-size: 0.8vw;
   top: 27.15vh;
 }
+#nepovep {
+  font-size: 1.6vw;
+}
 
+ #nepfflist {
+  font-size: 0.85vw;
+}
+
+#nepmilist {
+  font-size: 1.3vw;
+}
+
+ #nepast {
+  font-size: 0.8vw;
+    top: 12vh;
+}
+
+#nepast2 {
+  font-size: 0.8vw;
+  top: 28.15vh;
+}
 }
 
 #sunn {
