@@ -1363,6 +1363,19 @@ width: clamp(180px, 18vw, 260px);
 
 }
 
+@media (max-height: 700px) {
+  .marovp {
+    top: 12vh;
+    font-size: 1.5vw;
+    width: 65vw;
+  }
+
+  .marovp2 {
+    top: 60vh; /* bring it up */
+    font-size: 1.5vw;
+    width: 65vw;
+  }
+}
 
 #sunn {
   position: absolute;
