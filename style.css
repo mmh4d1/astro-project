@@ -1385,6 +1385,18 @@ width: clamp(180px, 18vw, 260px);
   font-size: 0.647vw;
     width: 57vw;
  }
+
+   #symars {
+  font-size: 0.8vw;
+}
+  #marsast {
+  font-size: 0.8vw;
+  top: 40.33vh;
+}
+  #marsast2 {
+  font-size: 0.8vw;
+  top: 39.33vh;
+}
   
 }
 
