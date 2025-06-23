@@ -1375,13 +1375,18 @@ width: clamp(180px, 18vw, 260px);
     font-size: 1.5vw;
     width: 65vw;
   }
-}
 
 #marsfflist{
     font-size: 1vw; 
     width: 55vw;         
     top: 14vh;        
   }
+ #marsmissions {
+  font-size: 0.647vw;
+    width: 57vw;
+ }
+  
+}
 
 #sunn {
   position: absolute;
