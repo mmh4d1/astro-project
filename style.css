@@ -1459,6 +1459,27 @@ width: clamp(180px, 18vw, 260px);
   font-size: 0.8vw;
   top: 28.15vh;
 }
+  #satovep {
+  font-size: 1.8vw;
+}
+
+#satfflist {
+  font-size: 1.1vw;
+}
+
+#satmiss {
+  font-size: 0.78vw;
+}
+
+ #satast {
+    font-size: 0.72vw;
+    top: 12vh;
+}
+
+#satast2 {
+  font-size: 0.72vw;
+  top: 24vh;
+}
 }
 
 #sunn {
