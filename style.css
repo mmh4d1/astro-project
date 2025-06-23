@@ -1377,6 +1377,12 @@ width: clamp(180px, 18vw, 260px);
   }
 }
 
+#marsfflist{
+    font-size: 1vw; 
+    width: 55vw;         
+    top: 14vh;        
+  }
+
 #sunn {
   position: absolute;
   top: 5vh;
