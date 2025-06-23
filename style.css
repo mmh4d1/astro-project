@@ -1480,6 +1480,29 @@ width: clamp(180px, 18vw, 260px);
   font-size: 0.72vw;
   top: 24vh;
 }
+  #uraovep {
+  left: 35vw;
+  font-size: 1.6vw;
+   top: 15vh;
+}
+
+#urafflist {              
+  font-size: 1.15vw;                   
+}
+
+#uranusmissions {
+  font-size: 1.3vw;
+}
+
+  #urast {
+  font-size: 0.72vw;;
+  top: 12.26vh;
+}
+
+#urast2 {
+  font-size: 0.72vw;
+  left: 60.90vw;
+}
 }
 
 #sunn {
